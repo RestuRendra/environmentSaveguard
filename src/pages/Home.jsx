@@ -1,18 +1,13 @@
-import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
-import HeroHome1 from "./assets/HeroHome1.png";
-import HeroHome2 from "./assets/HeroHome2.png";
-import HeroHome3 from "./assets/HeroHome3.png";
-import aboutHome1 from "./assets/aboutHome1.png";
-import aboutHome2 from "./assets/aboutHome2.png";
-import donationHome1 from "./assets/donationHome1.png";
-import articleHome1 from "./assets/articleHome1.png";
-import comunityHome1 from "./assets/comunityHome1.png";
-import "./index.css";
+import Navbar from './../Navbar.jsx';
+import "../index.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 
 function Home() {
   return (
     <>
+      <Navbar/>
+      <section id='carrousel-home'>
       <div id="hero-carousel" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -22,7 +17,7 @@ function Home() {
 
         <div className="carousel-inner">
           <div className="carousel-item active c-item">
-            <img src={HeroHome1} className="d-block w-100 c-img" alt="Slide 1" />
+            <img src="/Home/HeroHome1.png" className="d-block w-100 c-img" alt="Slide 1" />
             <div className="carousel-caption top-0 mt-4">
               <h1>YOUNG PEOPLE'S VOICES FOR A SUSTAINABLE FUTURE</h1>
               <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
@@ -30,14 +25,14 @@ function Home() {
             </div>
           </div>
           <div className="carousel-item c-item">
-            <img src={HeroHome2} className="d-block w-100 c-img" alt="Slide 2" />
+            <img src="/Home/HeroHome2.png" className="d-block w-100 c-img" alt="Slide 2" />
             <div className="carousel-caption top-0 mt-4">
               <h1>PLANTING A THOUSAND TRESS </h1>
               <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
             </div>
           </div>
           <div className="carousel-item c-item">
-            <img src={HeroHome3} className="d-block w-100 c-img" alt="Slide 3" />
+            <img src="/Home/HeroHome3.png" className="d-block w-100 c-img" alt="Slide 3" />
             <div className="carousel-caption top-0 mt-4">
               <h1>PLANTING A THOUSAND TRESS </h1>
               <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
@@ -53,6 +48,8 @@ function Home() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
+      </section>
+      
 
       <section id="about-home">
         <div className="container">
@@ -68,9 +65,9 @@ function Home() {
           <div className="container-image">
             <tr>
               <td rowSpan={2} className="img-about-home">
-                <div class="card">
-                  <img src={aboutHome2} alt="" class="card-img-top" />
-                  <div class="card-body">
+                <div className="card">
+                  <img src="/Home/aboutHome2.png" alt="" className="card-img-top" />
+                  <div className="card-body">
                     <h5>Planting a Thousand Trees</h5>
                     <p>From its medieval origins to the digital era, learn everything there is to know about the ubiquitous lorem ipsum passage.</p>
                     <a href="">Read More</a>
@@ -78,9 +75,9 @@ function Home() {
                 </div>
               </td>
               <td>
-                <div class="card">
-                  <img src={aboutHome1} alt="" class="card-img-top" />
-                  <div class="card-body">
+                <div className="card">
+                  <img src="/Home/aboutHome1.png" alt="" className="card-img-top" />
+                  <div className="card-body">
                     <h5>Planting a Thousand Trees</h5>
                     <p>From its medieval origins to the digital era, learn everything there is to know about the ubiquitous lorem ipsum passage.</p>
                     <a href="">Read More</a>
@@ -90,9 +87,9 @@ function Home() {
             </tr>
             <tr>
               <td>
-                <div class="card">
-                  <img src={aboutHome2} alt="" class="card-img-top" />
-                  <div class="card-body">
+                <div className="card">
+                  <img src="/Home/aboutHome1.png" alt="" className="card-img-top" />
+                  <div className="card-body">
                     <h5>Planting a Thousand Trees</h5>
                     <p>From its medieval origins to the digital era, learn everything there is to know about the ubiquitous lorem ipsum passage.</p>
                     <a href="">Read More</a>
@@ -109,7 +106,7 @@ function Home() {
           <h1>Donation</h1>
           <div className="donation1">
             <div className="img-description">
-              <img src={donationHome1} alt="" />
+              <img src="/Home/donationHome1.png" alt="" />
             </div>
             <div className="donation-home-description">
               <h5>Proceeds Will Be Used To Conserve Endangered Animals</h5>
@@ -122,12 +119,12 @@ function Home() {
               <p>A lot of animal in the wild that in danger because irresponsible human that always try to hunt illegal animal. From your help we can save a lot of endangered animal outside there vanished from this world.</p>
             </div>
             <div className="img-description">
-              <img src={donationHome1} alt="" />
+              <img src="/Home/donationHome2.png" alt="" />
             </div>
           </div>
           <div className="donation1">
             <div className="img-description">
-              <img src={donationHome1} alt="" />
+              <img src="/Home/donationHome3.png" alt="" />
             </div>
             <div className="donation-home-description">
               <h5>Proceeds Will Be Used To Conserve Endangered Animals</h5>
@@ -140,7 +137,7 @@ function Home() {
               <p>A lot of animal in the wild that in danger because irresponsible human that always try to hunt illegal animal. From your help we can save a lot of endangered animal outside there vanished from this world.</p>
             </div>
             <div className="img-description">
-              <img src={donationHome1} alt="" />
+              <img src="/Home/donationHome4.png" alt="" />
             </div>
           </div>
         </div>
@@ -152,30 +149,30 @@ function Home() {
             <h3>Lastest Article</h3>
             <a href="">See All</a>
           </div>
-          <div class="articles-container">
-            <div class="card">
-              <img src={articleHome1} alt="Article 1" />
-              <div class="article-info">
+          <div className="articles-container">
+            <div className="card">
+              <img src="/Home/articleHome1.png" alt="Article 1" />
+              <div className="article-info">
                 <h3>Vaguely in the Spotlight: Environmental Issues that are Always Overlooked</h3>
-                <a href="#" class="read-more">
+                <a href="#" className="read-more">
                   Read More
                 </a>
               </div>
             </div>
-            <div class="card">
-              <img src={articleHome1} alt="Article 1" />
-              <div class="article-info">
+            <div className="card">
+              <img src="/Home/articleHome2.png" alt="Article 1" />
+              <div className="article-info">
                 <h3>Dare to Change: Becoming an Urban Citizen Sustainable with Public Transportation</h3>
-                <a href="#" class="read-more">
+                <a href="#" className="read-more">
                   Read More
                 </a>
               </div>
             </div>
-            <div class="card">
-              <img src={articleHome1} alt="Article 1" />
-              <div class="article-info">
+            <div className="card">
+              <img src="/Home/articleHome3.png" alt="Article 1" />
+              <div className="article-info">
                 <h3>TAPMI: Migrant Seafarers are Migrant Workers who play an important role</h3>
-                <a href="#" class="read-more">
+                <a href="#" className="read-more">
                   Read More
                 </a>
               </div>
@@ -190,24 +187,24 @@ function Home() {
             <h3>Comunity List</h3>
             <a href="">See All</a>
           </div>
-          <div class="comunity-container">
-            <div class="card">
-              <img src={comunityHome1} alt="Comunity1 1" />
-              <div class="comunity-info">
+          <div className="comunity-container">
+            <div className="card">
+              <img src="/Home/comunityHome1.png" alt="Comunity1 1" />
+              <div className="comunity-info">
                 <h3>Pandu Laut Nusantara</h3>
                 <p>Eco Comunity</p>
               </div>
             </div>
-            <div class="card">
-              <img src={comunityHome1} alt="Comunity 1" />
-              <div class="comunity-info">
+            <div className="card">
+              <img src="/Home/comunityHome2.png" alt="Comunity 1" />
+              <div className="comunity-info">
                 <h3>Youth for Climate Change Indonesia (YFCC Indonesia)</h3>
                 <p>Eco Comunity</p>
               </div>
             </div>
-            <div class="card">
-              <img src={comunityHome1} alt="Comunity 1" />
-              <div class="comunity-info">
+            <div className="card">
+              <img src="/Home/comunityHome3.png" alt="Comunity 1" />
+              <div className="comunity-info">
                 <h3>Kampoeng Djoeang</h3>
                 <p>Eco Comunity</p>
               </div>

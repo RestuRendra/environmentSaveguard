@@ -18,6 +18,7 @@ body {
   display: flex;
   justify-content: center; /* Memusatkan item-menu */
   flex-grow: 1; /* Biarkan item-menu membesar sesuai kebutuhan */
+  margin-left: 4cm;
 }
 
 .navbar-nav .nav-item {
@@ -84,24 +85,28 @@ input[type="search"]::-webkit-search-cancel-button {
   height: 100%;
   width: auto;
   object-fit: cover;
-  filter: brightness(0.45);
+  filter: brightness(0.40);
 }
 
-.carousel-caption {
+#carrousel-home .carousel-caption {
   padding-top: 200px;
   font-size: 20px;
-  text-align: left;
+  text-align: start;
+  align-items: start;
+  justify-content: start;
 }
 
 .carousel-caption h1 {
   width: 580px;
   font-weight: bold;
+  text-align: start;
 }
 
 .carousel-caption p {
   width: 690px;
   margin-top: 20px;
   margin-bottom: 0px;
+  text-align: start;
 }
 
 .carousel-caption button {
@@ -361,10 +366,9 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .comunity-container {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
 }
 
 .comunity-container .card {
@@ -378,9 +382,11 @@ input[type="search"]::-webkit-search-cancel-button {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
-.comunity img {
-  max-width: 100%;
-  height: auto;
+.comunity-container img {
+  padding: 20px; /* Simplified padding notation */
+  width: 300px;
+  height: 150px;
+  vertical-align: middle;
 }
 
 .comunity-info {
@@ -413,7 +419,7 @@ input[type="search"]::-webkit-search-cancel-button {
   padding-top: 100px;
   width: 100%;
   height: 15cm;
-  background-image: url("./assets/aboutHero.png");
+  background-image: url("/public/About/heroSection.png");
   background-size: cover;
 }
 
@@ -454,7 +460,7 @@ input[type="search"]::-webkit-search-cancel-button {
 /* Visi Misi */
 
 #about-visi-misi {
-  margin: 3cm 0;
+  margin: 2cm 0;
 }
 
 #about-visi-misi .visi-content {
@@ -472,6 +478,22 @@ input[type="search"]::-webkit-search-cancel-button {
   font-size: 20px;
 }
 
+#about-visi-misi .misi-content h3 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#about-visi-misi .misi-content ol li {
+  width: 100%;
+  font-size: 20px;
+}
+
+#about-visi-misi .misi-content {
+  margin-top: 3.8cm;
+  margin-left: 1.4cm;
+}
+
 #about-visi-misi .visi {
   display: flex;
 }
@@ -483,6 +505,12 @@ input[type="search"]::-webkit-search-cancel-button {
 .visi-image tr td {
   padding: 8px 8px;
 }
+
+#about-visi-misi .visi-content {
+  margin-top: 2.4cm;
+  margin-left: 200;
+}
+
 
 /* market */
 .image-wrapper {

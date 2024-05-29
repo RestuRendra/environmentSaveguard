@@ -1,6 +1,6 @@
 import React from "react";
 import gambar1 from "./assets/Forgot.png";
-import "./index.css";
+import "../index.css"
 
 function Verify() {
   return (
@@ -22,7 +22,7 @@ function Verify() {
                 <input type="number" disabled />
                 <input type="number" disabled />
               </div>
-              <a href="reset-password.html" class="button">
+              <a href="reset-password.html" className="button">
                 Send
               </a>
             </form>
