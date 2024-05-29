@@ -1,17 +1,3 @@
-import Gambar1 from "./assets/market/HeroMarket1.png";
-import Gambar2 from "./assets/market/HeroMarket2.png";
-import Gambar3 from "./assets/market/PiringDaurUlang.jpg";
-import Gambar4 from "./assets/market/Tas Godie Bag.jpg";
-import Gambar5 from "./assets/market/Souvenir Candle Lilin.jpg";
-import Gambar6 from "./assets/market/Tas Karung Bekas.jpg";
-import Gambar7 from "./assets/market/Gantungan Kunci.jpg";
-import Gambar8 from "./assets/market/Tas Belanja Daur Ulang.jpg";
-import Gambar9 from "./assets/market/PiringDaurUlang.jpg";
-import Gambar10 from "./assets/market/Tas Minyak Daur Ulang.jpg";
-import Gambar11 from "./assets/market/Tempat Pensil Daur Ulang.jpg";
-import Gambar12 from "./assets/market/Tempat Pencil Kaleng Rokok dan Sedotan.png";
-import Gambar13 from "./assets/market/Tempat Pensil Daur Ulang Bekas.jpg";
-import Gambar14 from "./assets/market/Kipas Tangan.jpg";
 import "./index.css";
 import { Link } from "react-router-dom";
 function Market() {
@@ -19,8 +5,8 @@ function Market() {
     <>
       <section id="market-hero">
         <div className="image-wrapper">
-          <img src={Gambar1} alt="Gambar 1" className="additional-image large-image" />
-          <img src={Gambar2} alt="Gambar 2" className="additional-image" />
+          <img src="market/HeroMarket1.png" alt="Gambar 1" className="additional-image large-image" />
+          <img src="market/HeroMarket2.png" alt="Gambar 2" className="additional-image" />
         </div>
       </section>
 
@@ -37,7 +23,7 @@ function Market() {
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card">
-              <img src={Gambar3} class="card-img-top" alt="..." />
+              <img src="market/PiringDaurUlang.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h6>Piring Daur Ulang</h6>
                 <p>Rp.22.000</p>
@@ -54,7 +40,7 @@ function Market() {
           </div>
           <div class="col">
             <div class="card">
-              <img src={Gambar4} class="card-img-top" alt="..." />
+              <img src="market/Tas Godie Bag.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h6>Tas GodieBag</h6>
                 <p>Rp.30.000</p>
@@ -71,7 +57,7 @@ function Market() {
           </div>
           <div class="col">
             <div class="card">
-              <img src={Gambar5} class="card-img-top" alt="..." />
+              <img src="market/Souvenir Candle Lilin.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h6>Souvenir Candle Lilin</h6>
                 <p>Rp.12.000</p>
@@ -102,7 +88,7 @@ function Market() {
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card">
-              <img src={Gambar6} class="card-img-top" alt="..." />
+              <img src="market/Tas Karung Bekas.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h6>Tas Dari Karung Bekas</h6>
                 <p>Rp.6.500</p>
@@ -119,7 +105,7 @@ function Market() {
           </div>
           <div class="col">
             <div class="card">
-              <img src={Gambar7} class="card-img-top" alt="..." />
+              <img src="market/Gantungan Kunci.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h6>Gantungan Kunci </h6>
                 <p>Rp.3.300</p>
@@ -136,7 +122,7 @@ function Market() {
           </div>
           <div class="col">
             <div class="card">
-              <img src={Gambar8} class="card-img-top" alt="..." />
+              <img src="market/Tas Belanja Daur Ulang.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h6>Tas Belanja Daur Ulang</h6>
                 <p>Rp.13.000</p>
@@ -160,7 +146,7 @@ function Market() {
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card">
-                <img src={Gambar9} class="card-img-top" alt="..." />
+                <img src="market/PiringDaurUlang.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h6>Piring Daur Ulang</h6>
                   <p>Rp.22.000</p>
@@ -177,7 +163,7 @@ function Market() {
             </div>
             <div class="col">
               <div class="card">
-                <img src={Gambar10} class="card-img-top" alt="..." />
+                <img src="market/Tas Minyak Daur Ulang.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h6>Tas Totebag Kemasan Minyak Daur Ulang</h6>
                   <p>Rp.25.000 - 30.000</p>
@@ -194,7 +180,7 @@ function Market() {
             </div>
             <div class="col">
               <div class="card">
-                <img src={Gambar11} class="card-img-top" alt="..." />
+                <img src="market/Tempat Pensil Daur Ulang.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h6>Tempat Pensil Daur Ulang Kotak Pencil Case</h6>
                   <p>Rp.27.000</p>
@@ -213,7 +199,7 @@ function Market() {
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card">
-                <img src={Gambar12} class="card-img-top" alt="..." />
+                <img src="market/Tempat Pencil Kaleng Rokok dan Sedotan.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h6>Tempat pensil dari kaleng rokok bekas dan sedotan</h6>
                   <p>Rp.18.000</p>
@@ -230,7 +216,7 @@ function Market() {
             </div>
             <div class="col">
               <div class="card">
-                <img src={Gambar13} class="card-img-top" alt="..." />
+                <img src="market/Tempat Pensil Daur Ulang Bekas.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h6>Tempat pensil / vas bunga dari botol bekas</h6>
                   <p>Rp.15.500</p>
@@ -247,7 +233,7 @@ function Market() {
             </div>
             <div class="col">
               <div class="card">
-                <img src={Gambar14} class="card-img-top" alt="..." />
+                <img src="market/Kipas Tangan.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h6>Kipas tangan dari sedotan</h6>
                   <p>Rp.16.000</p>
