@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* navbar */
+.navbar {
+  background-color: #ffffff;
+  height: 10vh;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Memusatkan item-menu */
+  flex-grow: 1; /* Biarkan item-menu membesar sesuai kebutuhan */
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px; /* Jarak antar item-menu */
+}
+
+.form-inline {
+  display: flex;
+  justify-content: flex-end; /* Memindahkan form pencarian ke kanan */
+  flex-grow: 1; /* Biarkan form pencarian membesar sesuai kebutuhan */
+}
+
+.search-bar {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.search-bar input[type="search"] {
+  width: 200px;
+  padding: 8px 30px 8px 10px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 40px;
+  background-color: #03624c;
+  color: #ffffff;
+}
+
+.search-bar input[type="search"]::placeholder {
+  color: #ffffff; /* Ubah warna teks placeholder menjadi merah */
+}
+
+.search-bar i {
+  color: #ffffff;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button .btn {
+  background-color: #03624c;
+  color: #ffffff;
+  font-size: 15px;
+  margin: 20px;
+  border: none; /* Menghapus border button */
+  padding: 8px 10px; /* Padding button */
+  border-radius: 10px; /* Border radius button */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat dihover */
+}
+
+.button .btn:hover {
+  background-color: #accbc4; /* Warna latar button saat dihover */
+}
+
+/* Hero Section */
+
+.c-img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  filter: brightness(0.45);
+}
+
+.carousel-caption{
+  padding-top: 200px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.carousel-caption h1{
+  width: 580px;
+  font-weight: bold;
+}
+
+.carousel-caption p{
+  width: 690px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.carousel-caption button{
+  margin-top: 0px;
+  background-color: #03624c; /* Sesuaikan warna tombol */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  font-size: 10px;
+  font-weight: bold;
+  width: 170px;
+  height: 1.5cm;
+}
+
+/* Home About */
+
+#about-home{
+  margin-top: 2cm;
+}
+
+.about-home{
+  margin-top: 5cm;
+}
+
+.about-home h1{
+  font-weight: bold;
+  width: 500px;
+  margin: 20px 0px;
+}
+
+.about-home p{
+  font-weight:600;
+  margin-top: 30px;
+
+}
+
+.about-home .btn-about{
+  margin-top: 0px;
+  background-color: #03624c; /* Sesuaikan warna tombol */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  font-size: 10px;
+  font-weight: bold;
+  width: 170px;
+  height: 1.5cm;
+  animation-duration: 0.1s;
+}
+
+.about-home .btn-about :hover{
+  background-color: red;
+
+}
+
+#about-home .container{
+  display: flex;
+  gap: 2cm;
+}
+
+.container-image{
+  align-items: center;
+  text-align: center;
+}
+
+.container-image td{
+  padding: 10px;
+}
+
+.img-about-home{
+  vertical-align: middle;
+  align-items: center;
+}
+
+.container-image .card{
+  padding: 20px;
+  background-color: #03624c;
+  width: 280px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.container-image .card-body{
+  color: #fff;
+  text-align: start;
+  text-align: justify;
+  padding: 20px 0px;
+}
+
+.container-image .card-body a{
+  color: #fff;
+  font-size: 12px;
+}
+
+/* Donation Home */
+#donation-home .container{
+  background-color: #07926E;
+  color: #fff;
+  padding: 50px 100px;
+  margin-top: 65px;
+  border-radius: 20px;
+}
+
+#donation-home .container h1{
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.donation1{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 55px;
+}
+
+.donation1 .donation-home-description{
+  background-color: #03624c;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px 20px;
+  border-radius: 20px;
+  position: relative;
+  right: 2cm;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.donation1 .donation-home-description h5{
+  padding: 20px 20px;
+}
+
+.donation1 .donation-home-description p{
+  padding: 20px 20px;
+}
+
+.donation2 .donation-home-description{
+  background-color: #03624c;
+  height: 20%;
+}
+
+.donation2{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 55px;
+}
+
+.donation2 .donation-home-description{
+  background-color: #03624c;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px 20px;
+  border-radius: 20px;
+  position: relative;
+  left: 2cm;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.donation2 .donation-home-description h5{
+  padding: 20px 20px;
+}
+
+.donation2 .donation-home-description p{
+  padding: 20px 20px;
+}
+
+/* Article Home */
+#article-home{
+  margin-top: 2cm;
+}
+
+#article-home .container{
+  padding: 0px 1.3cm;
+}
+
+.article-home-detail{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0px 0.5cm;
+}
+
+.article-home-detail h3{
+  font-weight: bold;
+}
+
+.article-home-detail a{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.articles-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.articles-container .card{
+  width: 400px;
+  height: auto;
+  margin: 20px 20px;
+  border: none;
+}
+
+.article img {
+  max-width: 100%;
+  height: auto;
+}
+
+.article-info {
+  margin-top: 10px;
+}
+
+.article-info h3 {
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.article-info a {
+  font-size: 15px;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+/* Comunity Home */
+#comunity-home{
+  margin-top: 2cm;
+  padding-bottom: 2cm;
+}
+
+#comunity-home .container{
+  padding: 0px 1.3cm;
+}
+
+.comunity-home-detail{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0px 0.5cm;
+}
+
+.comunity-home-detail h3{
+  font-weight: bold;
+}
+
+.comunity-home-detail a{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.comunity-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comunity-container .card{
+  width: 330px;
+  height: 300px;
+  margin: 20px 20px;
+  border: none;
+  background-color: #E8EFCF;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.comunity img {
+  max-width: 100%;
+  height: auto;
+}
+
+.comunity-info {
+  margin-top: 10px;
+  background-color: #5E9B8D;
+  padding: 5px 10px;
+  height: 150px;
+  border-bottom-right-radius: 25px;
+}
+
+.comunity-info h3 {
+  padding-top: 30px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  height: 70px;
+  font-weight: bold;
+}
+
+.comunity-info p {
+  font-size: 13px;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+
+
+/* ABOUT */
+
+
+/* Hero section */
+.about {
+  padding-top: 100px;
+  width: 100%;
+  height: 15cm;
+  background-image: url("./assets/aboutHero.png");
+  background-size: cover;
+}
+
+.about .content {
+  text-align: center;
+  padding-top: 100px;
+  color: #ffffff;
+}
+
+.about .content h1 {
+  font-size: 55px;
+  font-weight: 500;
+}
+
+.about .content h5 {
+  font-size: 25px;
+  font-weight: 300;
+  margin-left: 340px;
+  margin-right: 340px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.about .content a {
+  padding: 17px 28px;
+  background: #03624c;
+  color: white;
+  font-weight: bolder;
+  border-radius: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.about .teksbtn {
+  font-size: 15px;
+}
+
+/* Visi Misi */
+
+#about-visi-misi{
+  margin: 3cm 0;
+
+}
+
+#about-visi-misi .visi-content{
+  margin-top: 2.4cm;
+}
+
+#about-visi-misi .visi-content h3{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#about-visi-misi .visi-content p{
+  width: 80%;
+  font-size: 20px;
+}
+
+#about-visi-misi .visi{
+  display: flex;
+}
+
+.visi-image tr{
+  padding: 10px 10px;
+}
+
+.visi-image tr td{
+  padding: 8px 8px;
+}
+
