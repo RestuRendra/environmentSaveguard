@@ -1,6 +1,12 @@
+import Navbar from "./../Navbar.jsx";
+import "../index.css";
+import { Link } from "react-router-dom";
+import Footer from "../Footer.jsx";
+
 function AksiDetail1() {
   return (
     <>
+      <Navbar />
       <section id="aksi-detail1">
         <div className="container mb-3">
           <div className="row">
@@ -10,9 +16,9 @@ function AksiDetail1() {
                 Papua has a hidden beauty behind its forests. Various flora and fauna that are typical of Papua are in these forests. The beauty of Papua's forests remained there until the touch of human hands came to damage it rather than
                 protect it.
               </h6>
-              <a href="aksi-detail2.html" className="btn">
+              <Link to="/aksidetail2" className="btn">
                 Join the Action
-              </a>
+              </Link>
             </div>
             <div className="col-md-6 order-md-2 order-1">
               <div className="image_container">
@@ -35,6 +41,7 @@ function AksiDetail1() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

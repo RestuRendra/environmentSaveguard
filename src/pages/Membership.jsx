@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "../index.css"
+import "./../index.css";
+import Navbar from "./../Navbar.jsx";
 import { Link } from "react-router-dom";
+import Footer from "../Footer.jsx";
 
 const Membership = () => {
-  const [email, setEmail] = useState("");
-  const [firstName, setFirstName] = useState("");
   const [nominal, setNominal] = useState("");
   const [periode, setPeriode] = useState("");
   const [showPopup, setShowPopup] = useState(false);
@@ -39,6 +39,7 @@ const Membership = () => {
 
   return (
     <>
+      <Navbar />
       <section id="bulanan">
         <div className="card">
           <div className="card-body">
@@ -72,28 +73,6 @@ const Membership = () => {
                 <div className="col-md-6 order-md-2 order-1">
                   <h2>Payment Detail</h2>
                   <form>
-                    <div className="form-group">
-                      <label htmlFor="email">Email</label>
-                      <div className="input-wrapper">
-                        <input type="email" id="email" name="email" value={email} onChange={handleInputChange(setEmail)} required />
-                        {email === "" && (
-                          <span className="transparent-text">
-                            <i className="fa-regular fa-envelope"></i> greenguardians@gmail.com
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                    <div className="form-group">
-                      <label htmlFor="first-name">Nama</label>
-                      <div className="input-wrapper">
-                        <input type="text" id="first-name" name="first-name" value={firstName} onChange={handleInputChange(setFirstName)} required />
-                        {firstName === "" && (
-                          <span className="transparent-text">
-                            <i className="fa-regular fa-user"></i> Nama
-                          </span>
-                        )}
-                      </div>
-                    </div>
                     <div className="form-group">
                       <label htmlFor="nominal">Masukkan Nominal</label>
                       <select id="nominal" name="nominal" className="form-control" value={nominal} onChange={handleInputChange(setNominal)} required>
@@ -201,6 +180,7 @@ const Membership = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

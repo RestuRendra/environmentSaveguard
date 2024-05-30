@@ -1,9 +1,12 @@
-import "../index.css"
+import Footer from "../Footer.jsx";
+import "./../index.css";
+import Navbar from "./../Navbar.jsx";
 import { Link } from "react-router-dom";
 
 function Market() {
   return (
     <>
+      <Navbar />
       <section id="market-hero">
         <div className="image-wrapper">
           <img src="market/HeroMarket1.png" alt="Gambar 1" className="additional-image large-image" />
@@ -252,6 +255,8 @@ function Market() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </>
   );
 }

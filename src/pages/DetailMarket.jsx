@@ -1,8 +1,13 @@
-import "./../index.css"
+import Navbar from "./../Navbar.jsx";
+import "../index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+import Footer from "../Footer.jsx";
 
 function DetailMarket() {
   return (
     <>
+      <Navbar />
       <section id="detail-hero">
         <div className="detail-market">
           <img src="detail-market/profile-market.png" alt="Gambar 1" className="img-toko" />
@@ -240,6 +245,8 @@ function DetailMarket() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </>
   );
 }

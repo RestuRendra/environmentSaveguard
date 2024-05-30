@@ -1,6 +1,8 @@
-import React, { useState } from "react";
-import "../index.css"
+import React, { useState, useEffect } from "react";
+import "./../index.css";
+import Navbar from "./../Navbar.jsx";
 import { Link } from "react-router-dom";
+import Footer from "../Footer.jsx";
 
 const MetodePembayaran = () => {
   const [firstName, setFirstName] = useState("");
@@ -10,24 +12,9 @@ const MetodePembayaran = () => {
   const [periode, setPeriode] = useState("");
   const [metode, setMetode] = useState("");
 
-  const handleInputChange = (setter) => (e) => {
-    setter(e.target.value);
-  };
-
-  const handleNominalChange = (e) => {
-    let value = e.target.value.replace(/[^\d]/g, "");
-    if (value) {
-      value = parseInt(value).toLocaleString("id-ID");
-      setNominal(`Rp. ${value}`);
-    } else {
-      setNominal("");
-    }
-  };
-
-  const toggleTransparentText = (value) => (value !== "" ? "none" : "inline");
-
   return (
-    <div>
+    <>
+      <Navbar />
       <section id="metode">
         <div className="card">
           <div className="card-body">
@@ -49,41 +36,44 @@ const MetodePembayaran = () => {
               </div>
             </div>
             <hr />
-            <div className="container mb-3">
-              <div className="row">
-                <h1>Metode Pembayaran</h1>
-                <form className="info">
-                  <div className="dropdown">
-                    <label>Pentunjuk Transfer mBangking</label>
+            <div class="container mb-3">
+              <div class="row">
+                <h1>Metode Pembayaran </h1>
+                <form class="info">
+                  <div class="dropdown">
+                    <label for="text">Pentunjuk Transfer mBangking</label>
                     <span>
-                      <i className="fa-solid fa-caret-down"></i>
+                      <i class="fa-solid fa-caret-down"></i>
                     </span>
-                    <div className="dropdown-content">
+
+                    <div class="dropdown-content">
                       <a href="#">1. Pilih m-Transfer BCA Virtual Account.</a>
                       <a href="#">2. Masukkan nomor Virtual Account 123 45678456 dan pilih Send.</a>
                       <a href="#">3. Periksa informasu yang tertera di layar. Pastiikan Merchant adalah Enviroment Safeguard dan username kamu green guardian. Jika benar, pilih Ya!</a>
                       <a href="#">4. Masukkan PIN m-BCA Anda dan pilih OK.</a>
-                      <a href="#">5. Jika muncul notifikasi “Transaksi Gagal. Nominal melebihi limit harian”. mohon ulangi transaksi menggunakan klikBCA (ibangking ) atau ATM.</a>
+                      <a href="#">5. Jika muncul notifikasi “Transaksi Gagal. Nominal melebihi limit harian”. mohon ulangi transaksi menggunakan klikBCA (ibangking ) atau ATM.</a>
                     </div>
                   </div>
-                  <div className="dropdown">
-                    <label>Pentujuk Transfer iBangking</label>
+                  <div class="dropdown">
+                    <label for="text">Pentujuk Transfer iBangking</label>
                     <span>
-                      <i className="fa-solid fa-caret-down"></i>
+                      <i class="fa-solid fa-caret-down"></i>
                     </span>
-                    <div className="dropdown-content">
+
+                    <div class="dropdown-content">
                       <a href="#">1. Pilih Transfer Dana Transfer ke BCA Virtual Account.</a>
                       <a href="#">2. Masukkan nomor Virtual Account 123 45678456 dan pilih Lanjutkan.</a>
                       <a href="#">3. Periksa informasi yang tertera di layar. Pastikan Merchant Environment Safeguard, Total tagihan sudah benar dan username green guardian. Jika benar, pilih Lanjutkan.</a>
-                      <a href="#">4. Masukkan respon keyBCA Anda dan klik kirim Klik untuk buka iBangking.</a>
+                      <a href="#">4. Masukkan respon keyBCA Anda dan klik kirim Klik untuk buka iBangking.</a>
                     </div>
                   </div>
-                  <div className="dropdown">
-                    <label>Pentujuk Transfer ATM</label>
+                  <div class="dropdown">
+                    <label for="text">Pentujuk Transfer ATM </label>
                     <span>
-                      <i className="fa-solid fa-caret-down"></i>
+                      <i class="fa-solid fa-caret-down"></i>
                     </span>
-                    <div className="dropdown-content">
+
+                    <div class="dropdown-content">
                       <a href="#">1. Pilih Transaksi lainnya Transfer ke Rek BCA Virtual Account.</a>
                       <a href="#">2. Masukkan nomor Virtual Account 123 45678456 dan pilih Lanjutkan.</a>
                       <a href="#">3. Periksa informasi yang tertera di layar. Pastikan Merchant Environment Safeguard, Total tagihan sudah benar dan username green guardian. Jika benar, pilih Ya.</a>
@@ -110,7 +100,7 @@ const MetodePembayaran = () => {
               <h2>Berdonasi sekarang untuk mewujudkan lingkungan yang lebih hijau dan damai!</h2>
               <form className="info">
                 <div className="dropdown">
-                  <label>Donasimu mendanai 5 hal ini :</label>
+                  <label htmlFor="text">Donasimu mendanai 5 hal ini :</label>
                   <span>
                     <i className="fa-solid fa-caret-down"></i>
                   </span>
@@ -124,10 +114,9 @@ const MetodePembayaran = () => {
                   </div>
                 </div>
               </form>
-
               <form className="info">
                 <div className="dropdown">
-                  <label>Krisis iklim dan kehidupan kita :</label>
+                  <label htmlFor="text">Krisis iklim dan kehidupan kita :</label>
                   <span>
                     <i className="fa-solid fa-caret-down"></i>
                   </span>
@@ -140,10 +129,9 @@ const MetodePembayaran = () => {
                   </div>
                 </div>
               </form>
-
               <form className="info">
                 <div className="dropdown">
-                  <label>Solusi krisis iklim :</label>
+                  <label htmlFor="text">Solusi krisis iklim :</label>
                   <span>
                     <i className="fa-solid fa-caret-down"></i>
                   </span>
@@ -155,13 +143,13 @@ const MetodePembayaran = () => {
                   </div>
                 </div>
               </form>
-
               <h6>Terima kasih atas dukunganmu yang sangat berarti bagi Bumi.</h6>
             </div>
           </div>
         </div>
       </section>
-    </div>
+      <Footer />
+    </>
   );
 };
 

@@ -80,12 +80,11 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 /* Hero Section */
-
 .c-img {
   height: 100%;
   width: auto;
   object-fit: cover;
-  filter: brightness(0.40);
+  filter: brightness(0.4);
 }
 
 #carrousel-home .carousel-caption {
@@ -123,7 +122,6 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 /* Home About */
-
 #about-home {
   margin-top: 2cm;
 }
@@ -366,9 +364,9 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .comunity-container {
-  display: flex; 
-  align-items: center; 
-  justify-content: space-between; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .comunity-container .card {
@@ -458,7 +456,6 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 /* Visi Misi */
-
 #about-visi-misi {
   margin: 2cm 0;
 }
@@ -511,6 +508,74 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-left: 200;
 }
 
+/* our team */
+#team {
+  text-align: center;
+  padding: 50px;
+  background-color: #5e9b8d;
+}
+
+#team h2 {
+  color: #ffffff;
+}
+
+#team h4 {
+  color: #ffffff;
+}
+
+#team .col {
+  padding: 20px;
+  padding-bottom: 2px;
+}
+
+#team .card-body {
+  color: #ffffff;
+}
+
+#team .card {
+  border: none;
+  background-color: transparent;
+}
+
+#team .card-img-top {
+  border-radius: 15px;
+}
+
+/* our feature */
+#features {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#features .col {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#features .card {
+  border: none;
+}
+
+#features .card-img-top {
+  border-radius: 15px;
+}
+
+#features .row:last-child {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#features .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 25px; /* Ubah nilai sesuai keinginan Anda */
+  font-family: "Poppins",  sans-serif;
+}
 
 /* market */
 .image-wrapper {
@@ -1067,6 +1132,10 @@ input[type="search"]::-webkit-search-cancel-button {
   justify-content: space-between; /* Mengatur agar elemen berada pada ujung kiri dan kanan */
 }
 
+#bulanan .container h2 {
+  padding-bottom: 90px;
+}
+
 #bulanan .text-container {
   display: flex;
 }
@@ -1099,10 +1168,6 @@ input[type="search"]::-webkit-search-cancel-button {
 /* Warna teks ketika tautan dipilih */
 #bulanan .text-container a:hover p {
   color: black; /* Ubah warna teks yang dipilih */
-}
-
-#bulanan hr {
-  border: 1px solid black;
 }
 
 #bulanan .form-group {
@@ -1310,6 +1375,10 @@ input[type="search"]::-webkit-search-cancel-button {
 #satukali .container {
   display: flex;
   justify-content: space-between; /* Mengatur agar elemen berada pada ujung kiri dan kanan */
+}
+
+#satukali .container h2 {
+  padding-bottom: 90px;
 }
 
 #satukali .text-container {
@@ -1825,4 +1894,390 @@ input[type="search"]::-webkit-search-cancel-button {
   to {
     transform: scale(1.2);
   } /* Akhir: diperbesar 1.2 kali ukuran normal */
+}
+
+/* komunitas */
+#komunitas-card {
+  padding-top: 100px;
+  text-align: center;
+}
+
+#komunitas-card .card {
+  height: 420px;
+  margin-bottom: 20px;
+  background-color: #e8efcf;
+  border-radius: 10px;
+}
+
+#komunitas-card .card-body {
+  background-color: #5e9b8d;
+  border-radius: 10px;
+}
+
+#komunitas-card .card-img-top {
+  padding: 30px;
+  height: 300px;
+}
+
+/* Halaman Donasi Utama */
+#donation {
+  display: flex; /* Menggunakan flexbox untuk mengatur layout */
+  align-items: stretch; /* Memastikan kedua bagian memiliki tinggi yang sama */
+  justify-content: space-between;
+  margin-top: 80px; /* Memberikan ruang atas untuk konten */
+  width: 100%; /* Lebarkan sesuai dengan lebar parent */
+  height: 470px; /* Mengatur tinggi dalam satuan piksel */
+}
+
+#donation .left-section h3 {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  margin-top: 30px;
+}
+
+#donation .left-section h2 {
+  text-align: left;
+  font-size: 35px;
+  font-weight: bold;
+  color: #000000;
+  margin-right: 130px;
+  margin-top: -7px;
+}
+
+#donation .left-section p {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  margin-right: 170px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#donation .left-section {
+  flex: 2; /* Bagian kiri akan memiliki lebar 2 kali lipat dari bagian kanan */
+  background-color: rgba(3, 98, 76, 0.6); /* Warna latar belakang untuk bagian kiri */
+  padding: 60px; /* Berikan ruang di sekitar konten kiri */
+}
+
+#donation .right-section {
+  flex: 1; /* Bagian kanan akan memiliki lebar 1 */
+  background-color: rgba(172, 203, 196, 0.7); /* Warna dengan opacity 50% / / Warna latar belakang untuk bagian kanan */
+  text-align: right; /* Posisikan teks di bagian kanan */
+  padding: 10px; /* Berikan ruang di sekitar konten kanan */
+  display: flex;
+  justify-content: center; /* Menengahkan gambar secara horizontal */
+  align-items: center; /* Menengahkan gambar secara vertikal */
+}
+
+#donation .donate-button {
+  padding: 12px 27px; /* Berikan ruang di sekitar tombol */
+  font-size: 14px; /* Ukuran font tombol */
+  font-weight: 600;
+  background-color: #03624c; /* Warna latar belakang tombol */
+  color: #ffffff; /* Warna teks tombol */
+  border: none; /* Hapus garis tepi tombol */
+  border-radius: 15px; /* Berikan sudut bulat pada tombol */
+  cursor: pointer; /* Ubah kursor menjadi pointer saat digulir di atas tombol */
+  margin-top: 100px;
+  text-decoration: none;
+}
+
+#donation .donate-button:hover {
+  color: #ffffff;
+  background-color: #ffce39; /* Warna latar button saat dihover */
+}
+
+#donation .donation-image {
+  margin-top: -20px;
+  margin-right: 220px;
+  width: 400px; /* Atur lebar gambar */
+  height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aspek */
+  max-width: 200%; /* Pastikan gambar tidak melebihi lebar parent */
+  border-radius: 15px; /* Berikan sudut bulat pada gambar */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .donation-section {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    padding: 10px;
+  }
+
+  .donation-info h2 {
+    font-size: 1.5em;
+  }
+
+  .donation-info p {
+    font-size: 1em;
+  }
+
+  .donation-image {
+    width: 100%; /* Lebar penuh untuk gambar pada layar kecil */
+    max-width: 300px; /* Lebar maksimum untuk gambar */
+  }
+}
+
+#donasi-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh; /* Sesuaikan tinggi sesuai kebutuhan */
+  background-color: #03624c; /* Warna latar belakang kontainer */
+  position: relative;
+}
+
+#donasi-information::after {
+  content: ""; /* Menambahkan konten menggunakan pseudo-element */
+  position: absolute; /* Mengatur posisi absolut */
+  top: 50%; /* Mengatur posisi vertikal pada tengah */
+  left: 50%; /* Mengatur posisi horizontal pada tengah */
+  transform: translate(-50%, -50%); /* Menggeser ke tengah */
+  width: 2px; /* Lebar garis */
+  height: 100%; /* Tinggi garis */
+  background-color: #ffffff; /* Warna garis */
+}
+
+#donasi-information .left-info {
+  text-align: left;
+  padding-left: 40px;
+  float: left;
+  margin-right: 80px;
+}
+
+#donasi-information .left-info h1 {
+  font-size: 60px;
+  text-align: right;
+  font-weight: bold;
+  margin-top: -100px; /* Menaikkan konten */
+  color: #ffffff;
+}
+
+#donasi-information .left-info h2 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: -10px; /* Menaikkan konten */
+  color: #ffffff;
+}
+
+#donasi-information .left-info h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 40px; /* Menaikkan konten */
+  color: #ffffff;
+}
+
+#donasi-information .right-info {
+  text-align: left;
+  padding-left: 240px;
+  float: left;
+  margin-right: 30px;
+}
+
+#donasi-information .right-info h1 {
+  font-size: 60px;
+  text-align: right;
+  font-weight: bold;
+  padding-left: 230px;
+  margin-top: -100px; /* Menaikkan konten */
+  color: #ffffff;
+}
+
+#donasi-information .right-info h2 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: -10px; /* Menaikkan konten */
+  color: #ffffff;
+}
+
+#donasi-information .right-info h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 40px; /* Menaikkan konten */
+  color: #ffffff;
+}
+
+/* Program */
+#program .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#program .title h1 {
+  padding-left: 550px;
+  margin-top: 50px;
+  font-size: 40px; /* Ubah ukuran font */
+  font-weight: 600;
+}
+
+#program .title a {
+  padding-top: 130px;
+  padding-right: 50px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+#program .see-all {
+  font-size: 18px; /* Sesuaikan ukuran font sesuai kebutuhan */
+  color: #000000; /* Sesuaikan warna teks sesuai kebutuhan */
+  text-decoration: none; /* Membuat teks terlihat seperti tautan */
+  cursor: pointer; /* Menjadikan kursor menjadi tangan saat mengarah ke teks */
+  position: absolute; /* Gunakan position absolute */
+  top: 0; /* Geser ke atas */
+  right: 160px; /* Geser ke kanan */
+  margin-top: 70px; /* Jarak antara judul dan teks "See All" */
+}
+
+#program .see-all a {
+  color: #000000;
+}
+
+#program .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#program .card-container .card {
+  margin-top: 60px;
+  margin-bottom: 70px; /* Atur jarak antara setiap kartu */
+  margin-right: 15px; /* Atur jarak kanan kartu */
+  margin-left: 15px; /* Atur jarak kiri kartu */
+  background-color: rgba(172, 203, 196, 0.9);
+  border-radius: 15px;
+}
+
+#program .card-title {
+  margin-bottom: 50px; /* Sesuaikan sesuai kebutuhan */
+}
+
+#program .btn-primary {
+  background-color: #03624c; /* Sesuaikan warna tombol */
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* On Going */
+#ongoing-projects {
+  text-align: center;
+}
+
+#ongoing-projects h2 {
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#ongoing-projects .image-container {
+  display: flex; /* Use flexbox to align images */
+  justify-content: center; /* Center-align the images horizontally */
+}
+
+#ongoing-projects .image-container img {
+  max-width: 100%; /* Ensure images resize proportionally */
+  margin: 0 5px; /* Add spacing of 10 pixels on the left and right of each image */
+  margin-bottom: 100px;
+}
+
+/* footer */
+#footer {
+  background-color: #03624c;
+  position: relative;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+#footer hr {
+  color: #ffffff;
+}
+
+#footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+#footer .footer-col {
+  flex: 1;
+  margin-right: 20px;
+}
+
+#footer .footer-col img {
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+
+#footer .footer-col .footer {
+  width: 200px; /* Menetapkan lebar gambar footer */
+  height: auto; /* Mengatur ketinggian gambar agar sesuai dengan lebarnya */
+}
+
+#footer .footer-col .social-links a i {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 10px;
+}
+
+#footer .footer-col {
+  margin-left: 30px;
+}
+
+#footer .footer-col .social-links li {
+  list-style-type: none; /* Menghapus gaya daftar bawaan */
+  margin-bottom: 10px; /* Mengatur jarak antara setiap tautan */
+}
+
+#footer .footer-col .social-links li a {
+  text-decoration: none; /* Menghapus garis bawah dari tautan */
+  color: #ffffff; /* Warna teks tautan */
+  font-size: 18px;
+}
+
+#footer .footer-col .social-links span {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+#footer p {
+  text-align: center;
+  color: #ffffff;
+}
+
+#footer .footer-col .social-links a:hover i {
+  color: #accbc4; /* Warna latar button saat dihover */
+  transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+#footer .footer-col .social-links li:hover i {
+  color: #accbc4; /* Warna latar button saat dihover */
+  transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+#footer .footer-col .social-links a:hover i {
+  color: #accbc4; /* Warna latar button saat dihover */
+  transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+#footer .footer-col .social-links li:hover a {
+  color: #accbc4; /* Warna latar button saat dihover */
+  transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+#footer .footer-col .social-links li:hover span {
+  color: #accbc4; /* Warna latar button saat dihover */
+  transform: scale(1.1); /* Slightly enlarge the icon */
 }

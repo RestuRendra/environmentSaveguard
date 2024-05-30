@@ -1,55 +1,56 @@
-import Navbar from './../Navbar.jsx';
-import "../index.css"
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
+import Navbar from "./../Navbar.jsx";
+import "../index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+import Footer from "../Footer.jsx";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <>
-      <Navbar/>
-      <section id='carrousel-home'>
-      <div id="hero-carousel" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-indicators">
-          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
+      <Navbar />
+      <section id="carrousel-home">
+        <div id="hero-carousel" className="carousel slide" data-bs-ride="carousel">
+          <div className="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
 
-        <div className="carousel-inner">
-          <div className="carousel-item active c-item">
-            <img src="/Home/HeroHome1.png" className="d-block w-100 c-img" alt="Slide 1" />
-            <div className="carousel-caption top-0 mt-4">
-              <h1>YOUNG PEOPLE'S VOICES FOR A SUSTAINABLE FUTURE</h1>
-              <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-              <button className="btn btn-primary px-4 py-2 fs-5 mt-5">Get Started</button>
+          <div className="carousel-inner">
+            <div className="carousel-item active c-item">
+              <img src="/Home/HeroHome1.png" className="d-block w-100 c-img" alt="Slide 1" />
+              <div className="carousel-caption top-0 mt-4">
+                <h1>YOUNG PEOPLE'S VOICES FOR A SUSTAINABLE FUTURE</h1>
+                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                <button className="btn btn-primary px-4 py-2 fs-5 mt-5">Get Started</button>
+              </div>
+            </div>
+            <div className="carousel-item c-item">
+              <img src="/Home/HeroHome2.png" className="d-block w-100 c-img" alt="Slide 2" />
+              <div className="carousel-caption top-0 mt-4">
+                <h1>PLANTING A THOUSAND TRESS </h1>
+                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+              </div>
+            </div>
+            <div className="carousel-item c-item">
+              <img src="/Home/HeroHome3.png" className="d-block w-100 c-img" alt="Slide 3" />
+              <div className="carousel-caption top-0 mt-4">
+                <h1>PLANTING A THOUSAND TRESS </h1>
+                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+              </div>
             </div>
           </div>
-          <div className="carousel-item c-item">
-            <img src="/Home/HeroHome2.png" className="d-block w-100 c-img" alt="Slide 2" />
-            <div className="carousel-caption top-0 mt-4">
-              <h1>PLANTING A THOUSAND TRESS </h1>
-              <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-            </div>
-          </div>
-          <div className="carousel-item c-item">
-            <img src="/Home/HeroHome3.png" className="d-block w-100 c-img" alt="Slide 3" />
-            <div className="carousel-caption top-0 mt-4">
-              <h1>PLANTING A THOUSAND TRESS </h1>
-              <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-            </div>
-          </div>
+          <button className="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
         </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
       </section>
-      
 
       <section id="about-home">
         <div className="container">
@@ -185,7 +186,7 @@ function Home() {
         <div className="container">
           <div className="comunity-home-detail">
             <h3>Comunity List</h3>
-            <a href="">See All</a>
+            <Link to="/komunitas">See All</Link>
           </div>
           <div className="comunity-container">
             <div className="card">
@@ -212,6 +213,7 @@ function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

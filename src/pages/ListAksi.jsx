@@ -1,21 +1,27 @@
+import { Link } from "react-router-dom";
+import "./../index.css";
+import Navbar from "./../Navbar.jsx";
+import Footer from "../Footer.jsx";
+
 function ListAksi() {
   return (
     <>
+      <Navbar />
       <section id="aksi-card">
         <div className="container mb-3">
           <div className="row row-cols-1 row-cols-md-3 g-4">
             <div className="col">
               <div className="card">
-                <img src="Deforestation threatens tree kangaroo habitat in Papua New Guinea 1.png" className="card-img-top" alt="..." />
+                <img src="aksi/Deforestation threatens tree kangaroo habitat in Papua New Guinea 1.png" className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h4>I'm with the Papua Forest</h4>
                   <h6>
                     Through sustainable conservation efforts, we not only protect habitats for rare and endemic species, but also strengthen the protection of natural resources essential to human well-being. By understanding the ecological,
                     social and cultural value of Papua's forests, together we are building a greener and more sustainable future for all living things on this planet.
                   </h6>
-                  <a href="aksi-detail1.html" className="btn">
+                  <Link to="/aksidetail1" className="btn">
                     Read More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -99,6 +105,8 @@ function ListAksi() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </>
   );
 }

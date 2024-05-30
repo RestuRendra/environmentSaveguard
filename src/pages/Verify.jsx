@@ -1,6 +1,5 @@
 import React from "react";
-import gambar1 from "./assets/Forgot.png";
-import "../index.css"
+import "./../index.css";
 
 function Verify() {
   return (
@@ -8,7 +7,7 @@ function Verify() {
       <section id="verify">
         <div className="container">
           <div className="left-side">
-            <img src={gambar1} alt="Image" className="rotate" />
+            <img src="Forgot.png" alt="Image" className="rotate" />
           </div>
           <div className="right-side">
             <h2>
