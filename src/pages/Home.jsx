@@ -148,7 +148,7 @@ function Home() {
         <div className="container">
           <div className="article-home-detail">
             <h3>Lastest Article</h3>
-            <a href="">See All</a>
+            <Link to="/artikel" href="">See All</Link>
           </div>
           <div className="articles-container">
             <div className="card">

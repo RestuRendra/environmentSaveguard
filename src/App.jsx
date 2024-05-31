@@ -17,6 +17,8 @@ import Done from "./pages/Done.jsx";
 import Forgot from "./pages/Forgot.jsx";
 import Reset from "./pages/Reset.jsx";
 import Signin from "./pages/Signin.jsx";
+import Artikel from "./pages/Artikel.jsx";
+import ArtikelDetail from "./pages/ArtikelDetail.jsx";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/artikel" element={<Artikel />} />
+          <Route path="/artikeldetail" element={<ArtikelDetail />} />
           <Route path="/donasi" element={<Donasi />} />
           <Route path="/listaksi" element={<ListAksi />} />
           <Route path="/market" element={<Market />} />

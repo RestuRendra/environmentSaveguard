@@ -575,6 +575,133 @@ input[type="search"]::-webkit-search-cancel-button {
   font-family: "Poppins",  sans-serif;
 }
 
+/* Artikel */
+.artikel-hero {
+  padding: 100px;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.artikel-hero .image-wrapper {
+  height: auto;
+  display: flex;
+  align-items: flex-start; /* Mengatur gambar 5 untuk berada di sebelah kiri gambar 1-4 */
+}
+
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dua kolom */
+  grid-gap: 10px; /* Jarak antar gambar */
+}
+
+.artikel-hero .image-wrapper img {
+  max-width: 100%; /* Mengatur lebar maksimum gambar agar tidak melebihi parent */
+  height: auto; /* Tinggi disesuaikan dengan lebar */
+}
+
+.additional-image {
+  width: 727px;
+  margin-right: 10px; /* Jarak antara gambar 1-4 dan gambar 5 */
+}
+
+#artikel-card {
+  border-radius: 25px;
+}
+
+#artikel-card .card h5 {
+  height: 130px;
+}
+
+#artikel-card .card {
+  height: 650px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(3, 98, 76, 0.8);
+  color: #ffffff;
+}
+
+#artikel-card .btn {
+  background-color: #e8efcf;
+  color: #03624c;
+  font-weight: bold;
+  border-radius: 10px;
+  position: absolute; /* Mengatur posisi tombol sebagai absolut */
+  bottom: 25px; /* Meletakkan tombol di bagian bawah kartu */
+  left: 20px; /* Meletakkan tombol di sisi kiri kartu */
+}
+
+#artikel-card .btn:hover {
+  background-color: #ffce39;
+}
+
+/* Artikel Detail */
+.detail-artikel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.detail-artikel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.detail-artikel .text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  padding: 80px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text-overlay h1 {
+  font-size: 35px;
+}
+
+#detail .content {
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  text-shadow: 0 5px 10px rgb(237, 228, 228);
+}
+
+#detail .content h5 {
+  padding-top: 30px;
+}
+
+#detail h6 {
+  font-size: 20px;
+  padding: 30px;
+}
+
+#detail .first-letter-big {
+  display: flex;
+  align-items: center;
+}
+
+#detail .big-letter {
+  color: #76abae;
+  font-size: 250px; /* Ukuran huruf pertama yang lebih besar */
+  margin-right: 5px; /* Jarak antara huruf pertama dan teks */
+}
+
+#detail .img-fluid {
+  width: 500px;
+  height: auto;
+}
+
+
 /* market */
 #market-hero .image-wrapper {
   width: 88%;
