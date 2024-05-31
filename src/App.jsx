@@ -13,6 +13,10 @@ import AksiDetail1 from "./pages/AksiDetail1.jsx";
 import Komunitas from "./pages/Komunitas.jsx";
 import Footer from "./Footer.jsx";
 import AksiDetail2 from "./pages/AksiDetail2.jsx";
+import Done from "./pages/Done.jsx";
+import Forgot from "./pages/Forgot.jsx";
+import Reset from "./pages/Reset.jsx";
+import Signin from "./pages/Signin.jsx";
 
 function App() {
   return (
@@ -31,6 +35,10 @@ function App() {
           <Route path="/aksidetail1" element={<AksiDetail1 />} />
           <Route path="/aksidetail2" element={<AksiDetail2 />} />
           <Route path="/komunitas" element={<Komunitas />} />
+          <Route path="/done" element={<Done />} />
+          <Route path="/forgot" element={<Forgot />} />
+          <Route path="/reset" element={<Reset />} />
+          <Route path="/signin" element={<Signin />} />
           <Route path="/footer" element={<Footer />} />
         </Routes>
       </BrowserRouter>

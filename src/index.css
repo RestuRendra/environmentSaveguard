@@ -80,7 +80,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 /* Hero Section */
-.c-img {
+#carrousel-home .c-img {
   height: 100%;
   width: auto;
   object-fit: cover;
@@ -95,20 +95,20 @@ input[type="search"]::-webkit-search-cancel-button {
   justify-content: start;
 }
 
-.carousel-caption h1 {
+#carrousel-home .carousel-caption h1 {
   width: 580px;
   font-weight: bold;
   text-align: start;
 }
 
-.carousel-caption p {
+#carrousel-home .carousel-caption p {
   width: 690px;
   margin-top: 20px;
   margin-bottom: 0px;
   text-align: start;
 }
 
-.carousel-caption button {
+#carrousel-home .carousel-caption button {
   margin-top: 0px;
   background-color: #03624c; /* Sesuaikan warna tombol */
   color: #fff;
@@ -130,18 +130,18 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-top: 5cm;
 }
 
-.about-home h1 {
+#about-home .about-home h1 {
   font-weight: bold;
   width: 500px;
   margin: 20px 0px;
 }
 
-.about-home p {
+#about-home .about-home p {
   font-weight: 600;
   margin-top: 30px;
 }
 
-.about-home .btn-about {
+#about-home .about-home .btn-about {
   margin-top: 0px;
   background-color: #03624c; /* Sesuaikan warna tombol */
   color: #fff;
@@ -155,7 +155,7 @@ input[type="search"]::-webkit-search-cancel-button {
   animation-duration: 0.1s;
 }
 
-.about-home .btn-about :hover {
+#about-home .about-home .btn-about :hover {
   background-color: red;
 }
 
@@ -164,21 +164,21 @@ input[type="search"]::-webkit-search-cancel-button {
   gap: 2cm;
 }
 
-.container-image {
+#about-home .container-image {
   align-items: center;
   text-align: center;
 }
 
-.container-image td {
+#about-home .container-image td {
   padding: 10px;
 }
 
-.img-about-home {
+#about-home .img-about-home {
   vertical-align: middle;
   align-items: center;
 }
 
-.container-image .card {
+#about-home .container-image .card {
   padding: 20px;
   background-color: #03624c;
   width: 280px;
@@ -186,14 +186,14 @@ input[type="search"]::-webkit-search-cancel-button {
   border-radius: 20px;
 }
 
-.container-image .card-body {
+#about-home .container-image .card-body {
   color: #fff;
   text-align: start;
   text-align: justify;
   padding: 20px 0px;
 }
 
-.container-image .card-body a {
+#about-home .container-image .card-body a {
   color: #fff;
   font-size: 12px;
 }
@@ -212,7 +212,7 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-bottom: 80px;
 }
 
-.donation1 {
+#donation-home .donation1 {
   display: flex;
   align-content: center;
   align-items: center;
@@ -220,7 +220,7 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-bottom: 55px;
 }
 
-.donation1 .donation-home-description {
+#donation-home .donation1 .donation-home-description {
   background-color: #03624c;
   width: fit-content;
   height: fit-content;
@@ -231,20 +231,20 @@ input[type="search"]::-webkit-search-cancel-button {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.donation1 .donation-home-description h5 {
+#donation-home .donation1 .donation-home-description h5 {
   padding: 20px 20px;
 }
 
-.donation1 .donation-home-description p {
+#donation-home .donation1 .donation-home-description p {
   padding: 20px 20px;
 }
 
-.donation2 .donation-home-description {
+#donation-home .donation2 .donation-home-description {
   background-color: #03624c;
   height: 20%;
 }
 
-.donation2 {
+#donation-home .donation2 {
   display: flex;
   align-content: center;
   align-items: center;
@@ -252,7 +252,7 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-bottom: 55px;
 }
 
-.donation2 .donation-home-description {
+#donation-home .donation2 .donation-home-description {
   background-color: #03624c;
   width: fit-content;
   height: fit-content;
@@ -263,11 +263,11 @@ input[type="search"]::-webkit-search-cancel-button {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.donation2 .donation-home-description h5 {
+#donation-home .donation2 .donation-home-description h5 {
   padding: 20px 20px;
 }
 
-.donation2 .donation-home-description p {
+#donation-home .donation2 .donation-home-description p {
   padding: 20px 20px;
 }
 
@@ -280,7 +280,7 @@ input[type="search"]::-webkit-search-cancel-button {
   padding: 0px 1.3cm;
 }
 
-.article-home-detail {
+#article-home .article-home-detail {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -288,46 +288,46 @@ input[type="search"]::-webkit-search-cancel-button {
   padding: 0px 0.5cm;
 }
 
-.article-home-detail h3 {
+#article-home .article-home-detail h3 {
   font-weight: bold;
 }
 
-.article-home-detail a {
+#article-home .article-home-detail a {
   text-decoration: none;
   color: black;
   font-weight: 600;
 }
 
-.articles-container {
+#article-home .articles-container {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
 }
 
-.articles-container .card {
+#article-home .articles-container .card {
   width: 400px;
   height: auto;
   margin: 20px 20px;
   border: none;
 }
 
-.article img {
+#article-home .article img {
   max-width: 100%;
   height: auto;
 }
 
-.article-info {
+#article-home .article-info {
   margin-top: 10px;
 }
 
-.article-info h3 {
+#article-home .article-info h3 {
   font-size: 18px;
   margin-bottom: 30px;
   text-align: left;
 }
 
-.article-info a {
+#article-home .article-info a {
   font-size: 15px;
   text-align: left;
   text-decoration: none;
@@ -345,7 +345,7 @@ input[type="search"]::-webkit-search-cancel-button {
   padding: 0px 1.3cm;
 }
 
-.comunity-home-detail {
+#comunity-home .comunity-home-detail {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -353,23 +353,23 @@ input[type="search"]::-webkit-search-cancel-button {
   padding: 0px 0.5cm;
 }
 
-.comunity-home-detail h3 {
+#comunity-home .comunity-home-detail h3 {
   font-weight: bold;
 }
 
-.comunity-home-detail a {
+#comunity-home .comunity-home-detail a {
   text-decoration: none;
   color: black;
   font-weight: 600;
 }
 
-.comunity-container {
+#comunity-home .comunity-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.comunity-container .card {
+#comunity-home .comunity-container .card {
   width: 330px;
   height: 300px;
   margin: 20px 20px;
@@ -380,14 +380,13 @@ input[type="search"]::-webkit-search-cancel-button {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
-.comunity-container img {
-  padding: 20px; /* Simplified padding notation */
-  width: 300px;
-  height: 150px;
+#comunity-home .comunity-container img {
+  padding: 30px;
+  height: 220px;
   vertical-align: middle;
 }
 
-.comunity-info {
+#comunity-home .comunity-info {
   margin-top: 10px;
   background-color: #5e9b8d;
   padding: 5px 10px;
@@ -395,7 +394,7 @@ input[type="search"]::-webkit-search-cancel-button {
   border-bottom-right-radius: 25px;
 }
 
-.comunity-info h3 {
+#comunity-home .comunity-info h3 {
   padding-top: 30px;
   font-size: 18px;
   margin-bottom: 10px;
@@ -404,14 +403,13 @@ input[type="search"]::-webkit-search-cancel-button {
   font-weight: bold;
 }
 
-.comunity-info p {
+#comunity-home .comunity-info p {
   font-size: 13px;
   text-align: center;
   font-weight: 600;
 }
 
 /* ABOUT */
-
 /* Hero section */
 .about {
   padding-top: 100px;
@@ -578,7 +576,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 /* market */
-.image-wrapper {
+#market-hero .image-wrapper {
   width: 88%;
   height: 100vh;
   position: relative;
@@ -591,19 +589,19 @@ input[type="search"]::-webkit-search-cancel-button {
   gap: 10px; /* Space between images */
 }
 
-.additional-image {
+#market-hero .additional-image {
   height: 300px; /* Set a specific height for all images */
   object-fit: cover; /* Ensure the images cover the specified height and maintain aspect ratio */
   border-radius: 8px; /* Optional: Adds rounded corners to the images */
 }
 
-.large-image {
+#market-hero .large-image {
   flex: 2; /* Make the first image twice as wide as the second image */
   max-width: 75%; /* Optional: Limit the maximum width for the large image */
   width: 400px;
 }
 
-.additional-image:not(.large-image) {
+#market-hero .additional-image:not(.large-image) {
   flex: 1; /* Make the second image occupy the remaining space */
   max-width: 20%; /* Optional: Limit the maximum width for the smaller image */
 }
@@ -1903,20 +1901,40 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 #komunitas-card .card {
-  height: 420px;
+  height: 450px;
   margin-bottom: 20px;
   background-color: #e8efcf;
-  border-radius: 10px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 #komunitas-card .card-body {
   background-color: #5e9b8d;
-  border-radius: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 25px;
+}
+
+#komunitas-card .card-body h3 {
+  padding-top: 30px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  height: 70px;
+  font-weight: bold;
+}
+
+#komunitas-card .card-body p {
+  padding-top: 30px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  height: 70px;
+  font-weight: bold;
 }
 
 #komunitas-card .card-img-top {
   padding: 30px;
-  height: 300px;
+  height: 250px;
 }
 
 /* Halaman Donasi Utama */
@@ -2188,6 +2206,510 @@ input[type="search"]::-webkit-search-cancel-button {
   max-width: 100%; /* Ensure images resize proportionally */
   margin: 0 5px; /* Add spacing of 10 pixels on the left and right of each image */
   margin-bottom: 100px;
+}
+
+/* Forgot */
+#forgot {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("Password/Baground 2.png");
+}
+
+#forgot .container {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  height: 500px;
+  background: #f2f2f2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+#forgot .left-side,
+.right-side {
+  padding: 20px;
+}
+
+#forgot .left-side {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+#forgot .left-side img {
+  max-width: 100%;
+  height: auto;
+  animation: scale 2s alternate infinite;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1); /* Awal: ukuran normal */
+  }
+  to {
+    transform: scale(1.2); /* Akhir: diperbesar 1.2 kali ukuran normal */
+  }
+}
+
+#forgot .right-side {
+  flex: 2;
+  background-color: #f2f2f2;
+}
+
+#forgot .right-side-reset {
+  flex: 2;
+  background-color: #f2f2f2;
+}
+
+#forgot h2 {
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+#forgot p {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+#forgot .input-container {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+#forgot .input-container .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+#forgot .input-container input {
+  width: 100%;
+  height: 45px;
+  padding: 10px 10px 10px 30px;
+  padding-left: 40px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+#forgot .input-container i {
+  position: absolute; /* Mengatur posisi absolut untuk ikon */
+  left: 10px; /* Menentukan jarak ikon dari sisi kiri */
+  top: 50%; /* Menempatkan ikon di tengah vertikal */
+  transform: translateY(-50%); /* Mengatur posisi vertikal ikon ke tengah */
+}
+
+#forgot button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007c5f;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#forgot button:hover {
+  background-color: #ffce39;
+}
+
+#forgot .back-to-signin {
+  text-align: center; /* Posisikan teks ke tengah */
+  margin-top: 20px; /* Atur jarak atas jika diperlukan */
+}
+
+#forgot .back-to-signin a {
+  color: #000000; /* Warna teks untuk "Back to" menjadi putih */
+  text-decoration: none; /* Menghapus dekorasi garis bawah */
+  font-size: 15px;
+  text-align: center;
+}
+
+#forgot .back-to-signin a span {
+  color: #007bff; /* Warna teks untuk "sign in" menjadi biru */
+}
+
+#forgot .rotate {
+  animation: scale 2s alternate infinite; /* Animasi scale selama 2 detik */
+}
+
+/* Reset */
+#reset {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("Password/Baground 2.png");
+}
+
+#reset .container {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  height: 500px;
+  background: #f2f2f2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+#reset .left-side,
+.right-side {
+  padding: 20px;
+}
+
+#reset .left-side {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+#reset .left-side img {
+  max-width: 100%;
+  height: auto;
+  animation: scale 2s alternate infinite;
+}
+
+#reset .right-side {
+  flex: 2;
+  background-color: #f2f2f2;
+}
+
+#reset .right-side-reset {
+  flex: 2;
+  background-color: #f2f2f2;
+}
+
+#reset h2 {
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+#reset .right-side p {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+#reset .input-field {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+#reset .input-field .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+#reset .input-field input {
+  width: 100%;
+  height: 45px;
+  padding: 10px 10px 10px 30px;
+  padding-left: 40px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+#reset .input-field i {
+  position: absolute; /* Mengatur posisi absolut untuk ikon */
+  left: 10px; /* Menentukan jarak ikon dari sisi kiri */
+  top: 50%; /* Menempatkan ikon di tengah vertikal */
+  transform: translateY(-50%); /* Mengatur posisi vertikal ikon ke tengah */
+}
+
+#reset button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007c5f;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#reset button:hover {
+  background-color: #ffce39;
+}
+
+#reset .back-to-signin {
+  text-align: center; /* Posisikan teks ke tengah */
+  margin-top: 20px; /* Atur jarak atas jika diperlukan */
+}
+
+#reset .back-to-signin a {
+  color: #000000; /* Warna teks untuk "Back to" menjadi putih */
+  text-decoration: none; /* Menghapus dekorasi garis bawah */
+  font-size: 15px;
+  text-align: center;
+}
+
+#reset .back-to-signin a span {
+  color: #007bff; /* Warna teks untuk "sign in" menjadi biru */
+}
+
+#reset .rotate {
+  animation: scale 2s alternate infinite; /* Animasi scale selama 2 detik */
+}
+
+/* Done */
+#Done .background-2 {
+  background-image: url("img/Baground\ 2.png");
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Done .container {
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 58%; /* Mengatur lebar maksimum kontainer */
+  text-align: center;
+  position: relative; /* Mengatur posisi kontainer relatif untuk mengatur posisi teks dan ikon */
+}
+
+#Done .container img {
+  max-width: 100%;
+  height: auto;
+}
+
+#Done .icon-container {
+  position: absolute; /* Mengatur posisi absolut untuk ikon dan teks di dalam kontainer */
+  top: 50%; /* Menggeser ke atas sejauh 50% dari atas kontainer */
+  left: 50%; /* Menggeser ke kanan sejauh 50% dari kiri kontainer */
+  transform: translate(-50%, -50%); /* Menggeser kembali sejauh setengah dari lebar dan tinggi kontainer */
+  text-align: center; /* Mengatur teks agar berada di tengah */
+}
+
+#Done .icon {
+  width: 35%; /* Ubah ukuran gambar sesuai kebutuhan */
+  height: 35%; /* Ubah ukuran gambar sesuai kebutuhan */
+  animation: grow-shrink 2s ease-in-out infinite; /* Mengatur animasi */
+}
+
+@keyframes grow-shrink {
+  0% {
+    transform: scale(1); /* Ukuran normal pada awal animasi */
+  }
+  50% {
+    transform: scale(1.5); /* Membesar hingga 1.5 kali ukuran asli */
+  }
+  100% {
+    transform: scale(1); /* Kembali ke ukuran normal */
+  }
+}
+
+.message {
+  font-size: 25px; /* Ukuran font pesan */
+  font-weight: 600; /* Ketebalan font */
+  color: #000000; /* Warna teks */
+  margin-top: -5px; /* Jarak atas teks dari ikon */
+  animation: grow-shrink 2s ease-in-out infinite; /* Animasi */
+}
+
+/* Animasi grow dan shrink */
+@keyframes grow-shrink {
+  0%,
+  100% {
+    transform: scale(1);
+  } /* Awal dan akhir: normal */
+  50% {
+    transform: scale(1.1);
+  } /* Tengah: diperbesar */
+}
+
+#Done .back-to-login {
+  text-decoration: none;
+  color: #000000; /* Warna biru sesuai kebutuhan */
+  font-size: 12px;
+}
+
+#Done .Signin-text {
+  color: #007bff; /* Warna putih sesuai kebutuhan */
+  font-size: 12px;
+}
+
+/* sign in */
+#signin {
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  background: linear-gradient(-45deg, #6aebbe, #03624c, #d0fbe7, #0abf8c);
+  background-size: 400% 400%;
+  width: 100%;
+  height: 100vh;
+  animation: animate 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#signin .gambar img {
+  position: absolute;
+  width: 20%;
+  top: 9cm;
+  left: 23cm;
+}
+
+#signin .container {
+  margin-top: 1cm;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#signin .container-form {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-image: linear-gradient(#009b73, #2fd8a2, #6aebbe, #ebfef6);
+  width: 60%;
+  display: flex;
+  justify-content: end;
+}
+
+#signin .welcome h1 {
+  color: white;
+  margin-right: 30px;
+  padding-left: 50px;
+  padding-top: 100px;
+  text-align: end;
+}
+
+#signin .biodata h4 {
+  color: white;
+  margin-right: 30px;
+  padding-left: 50px;
+  padding-top: 50px;
+  text-align: end;
+}
+
+#signin form {
+  background-color: #ffffff;
+  width: 140%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding-top: 60px;
+}
+
+#signin .biodata {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+#signin .biodata h1 {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#signin form label {
+  margin-bottom: 5px;
+}
+
+#signin form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+#signin .remfp {
+  padding-top: 0px;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+#signin .checkbox {
+  align-items: center;
+}
+
+#signin .remfp a {
+  color: #4f4f4f;
+  text-decoration: none;
+}
+
+#signin button {
+  width: 60%;
+  text-decoration: none;
+  border-radius: 13px;
+  font-weight: bold;
+  font-size: 16px;
+  height: 50px;
+  margin: 20px 20px;
+  border-style: none;
+  background-color: #007c5f;
+  color: #ffffff;
+}
+
+#signin button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#signin button:hover {
+  background-color: #ffce39;
+  color: #ffffff;
+}
+
+#signin .signup {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+#signin .signup p {
+  margin-right: 5px;
+}
+
+#signin .signup a {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* footer */

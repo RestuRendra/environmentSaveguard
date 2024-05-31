@@ -14,8 +14,8 @@ function Komunitas() {
               <div class="card">
                 <img src="komunitas/Pandu Laut Nusantara.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5>Pandu Laut Nusantara</h5>
-                  <h6>Eco Community</h6>
+                  <h3>Pandu Laut Nusantara</h3>
+                  <p>Eco Community</p>
                 </div>
               </div>
             </div>
@@ -23,8 +23,8 @@ function Komunitas() {
               <div class="card">
                 <img src="komunitas/Diet-Kantong-Plastik-6-Daftar-Komunitas-Peduli-Lingkungan.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5>Youth for Climate Change Indonesia (YFCC Indonesia)</h5>
-                  <h6>Eco Community</h6>
+                  <h3>Youth for Climate Change Indonesia (YFCC Indonesia)</h3>
+                  <p>Eco Community</p>
                 </div>
               </div>
             </div>
@@ -32,8 +32,8 @@ function Komunitas() {
               <div class="card">
                 <img src="komunitas/Kampung juang 1.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5>Kampung Djoeang Surabaya</h5>
-                  <h6>Eco Community</h6>
+                  <h3>Kampung Djoeang Surabaya</h3>
+                  <p>Eco Community</p>
                 </div>
               </div>
             </div>
@@ -43,8 +43,8 @@ function Komunitas() {
               <div class="card">
                 <img src="komunitas/image5.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5>Zero Waste Indonesia</h5>
-                  <h6>Eco Community</h6>
+                  <h3>Zero Waste Indonesia</h3>
+                  <p>Eco Community</p>
                 </div>
               </div>
             </div>
@@ -52,8 +52,8 @@ function Komunitas() {
               <div class="card">
                 <img src="komunitas/image6.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5>Sustaination</h5>
-                  <h6>Eco Community</h6>
+                  <h3>Sustaination</h3>
+                  <p>Eco Community</p>
                 </div>
               </div>
             </div>
@@ -61,8 +61,8 @@ function Komunitas() {
               <div class="card">
                 <img src="komunitas/KeMangteer.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5>KeMANGTEER</h5>
-                  <h6>Eco Community</h6>
+                  <h3>KeMANGTEER</h3>
+                  <p>Eco Community</p>
                 </div>
               </div>
             </div>
@@ -72,8 +72,8 @@ function Komunitas() {
               <div class="card">
                 <img src="komunitas/image 12.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5>Yayasan Konservasi Laut Indonesia</h5>
-                  <h6>Eco Community</h6>
+                  <h3>Yayasan Konservasi Laut Indonesia</h3>
+                  <p>Eco Community</p>
                 </div>
               </div>
             </div>
@@ -81,8 +81,8 @@ function Komunitas() {
               <div class="card">
                 <img src="komunitas/image 8.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5>Pepelingasih</h5>
-                  <h6>Eco Community</h6>
+                  <h3>Pepelingasih</h3>
+                  <p>Eco Community</p>
                 </div>
               </div>
             </div>
