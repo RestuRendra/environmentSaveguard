@@ -8,24 +8,24 @@ function Artikel() {
   return (
     <>
       <Navbar />
-      <div className="artikel-hero">
-        <div className="image-wrapper">
-          <img
-            src="/Artikel/Happy friends chatting together, stock image in botanical garden.png"
-            alt="Gambar 5"
-            className="additional-image"
-          />
-          <div className="grid-2x2">
-            <img src="/Artikel/Rectangle 27.png" alt="Gambar 1" />
-            <img src="/Artikel/Rectangle 24.png" alt="Gambar 2" />
-            <img src="/Artikel/Rectangle 28.png" alt="Gambar 3" />
-            <img src="/Artikel/Rectangle 26.png" alt="Gambar 4" />
-          </div>
+      <div id="article-hero">
+        <div className="container-article">
+        <table>
+          <tr>
+            <td rowSpan={2}><img src="/Artikel/Happy friends chatting together, stock image in botanical garden.png" alt="" /></td>
+            <td><img src="/Artikel/Rectangle 27.png" alt="Gambar 1" /></td>
+            <td><img src="/Artikel/Rectangle 24.png" alt="Gambar 2" /></td>
+          </tr>
+          <tr>
+            <td><img src="/Artikel/Rectangle 28.png" alt="Gambar 3" /></td>
+            <td><img src="/Artikel/Rectangle 26.png" alt="Gambar 4" /></td>
+          </tr>
+        </table>
         </div>
       </div>
 
       <section id="artikel-card">
-        <div className="container mb-3">
+        <div className="container">
           <div className="row row-cols-1 row-cols-md-3 g-4">
             <div className="col">
               <div className="card">
@@ -92,8 +92,7 @@ function Artikel() {
                     difficult situation; the climate crisis is increasingly
                     threatening the lives of citizens, the democratic space is
                     narrowing, and the future for the younger generation is
-                    uncertain - for example regarding access to education and
-                    employment.
+                    uncertain.
                   </p>
                   <a href="#" className="btn">
                     Read More

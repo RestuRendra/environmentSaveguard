@@ -51,15 +51,15 @@ function About() {
             <div className="visi-image">
               <tr className="visi-image1">
                 <td>
-                  <img src="/About/aboutVisi1.png" alt="" />
+                  <img src="/About/aboutMisi1.png" alt="" />
                 </td>
                 <td>
-                  <img src="/About/aboutVisi2.png" alt="" />
+                  <img src="/About/aboutMisi2.png" alt="" />
                 </td>
               </tr>
               <tr>
                 <td className="" colSpan={2}>
-                  <img src="/About/aboutVisi3.png" alt="" />
+                  <img src="/About/aboutMisi3.png" alt="" />
                 </td>
               </tr>
             </div>
