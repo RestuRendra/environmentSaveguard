@@ -21,7 +21,7 @@ function Signin() {
               </div>
 
               <button>
-                <Link to="home.html">Login</Link>
+                <Link to="/profil">Login</Link>
               </button>
 
               <div class="remfp">
@@ -30,7 +30,7 @@ function Signin() {
                   <label for="hobi1">Remimber Me</label>
                   <br />
                 </div>
-                <Link to="forgot-password.html">Forgot Password?</Link>
+                <Link to="/forgot">Forgot Password?</Link>
               </div>
 
               <div class="signup">

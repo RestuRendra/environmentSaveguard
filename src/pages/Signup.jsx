@@ -1,5 +1,6 @@
 import React from "react";
 import "./../index.css";
+import { Link } from "react-router-dom";
 
 function Signup() {
   return (
@@ -32,7 +33,7 @@ function Signup() {
 
               <div class="signin">
                 <p>Already have an account?</p>
-                <a href="signin.html">Sign in</a>
+                <Link to="/signin">Sign in</Link>
               </div>
             </form>
           </div>

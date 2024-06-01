@@ -1,5 +1,6 @@
 import React from "react";
 import "./../index.css";
+import { Link } from "react-router-dom";
 
 function Profil() {
   return (
@@ -21,12 +22,12 @@ function Profil() {
 
         <section class="my-profil">
           <section class="small-container">
-            <a href="#profile" class="profile-link">
+            <Link to="/profil" class="profile-link">
               <i class="far fa-user"></i> My Profile
-            </a>
-            <a href="#logout" class="logout-link">
+            </Link>
+            <Link to="/" class="logout-link">
               <i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out
-            </a>
+            </Link>
           </section>
 
           <section class="large-container">

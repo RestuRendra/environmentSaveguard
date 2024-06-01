@@ -22,8 +22,10 @@ function Home() {
               <img src="/Home/HeroHome1.png" className="d-block w-100 c-img" alt="Slide 1" />
               <div className="carousel-caption top-0 mt-4">
                 <h1>YOUNG PEOPLE'S VOICES FOR A SUSTAINABLE FUTURE</h1>
-                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-                <button className="btn btn-primary px-4 py-2 fs-5 mt-5">Get Started</button>
+                <p>Join Us in Being Part of a Global Movement to Inspire, Mobilize, and Deliver the Change Our Planet and Our Children Need. Let's Build a Better Future Together!"</p>
+                <Link to="/" className="button-getstarted">
+                  Get Started
+                </Link>
               </div>
             </div>
             <div className="carousel-item c-item">
@@ -31,6 +33,9 @@ function Home() {
               <div className="carousel-caption top-0 mt-4">
                 <h1>PLANTING A THOUSAND TRESS </h1>
                 <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                <Link to="/" className="button-getstarted">
+                  Get Started
+                </Link>
               </div>
             </div>
             <div className="carousel-item c-item">
@@ -38,6 +43,9 @@ function Home() {
               <div className="carousel-caption top-0 mt-4">
                 <h1>PLANTING A THOUSAND TRESS </h1>
                 <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                <Link to="/" className="button-getstarted">
+                  Get Started
+                </Link>
               </div>
             </div>
           </div>
@@ -71,7 +79,7 @@ function Home() {
                   <div className="card-body">
                     <h5>Planting a Thousand Trees</h5>
                     <p>From its medieval origins to the digital era, learn everything there is to know about the ubiquitous lorem ipsum passage.</p>
-                    <a href="">Read More</a>
+                    <Link to="">Read More</Link>
                   </div>
                 </div>
               </td>
@@ -81,7 +89,7 @@ function Home() {
                   <div className="card-body">
                     <h5>Planting a Thousand Trees</h5>
                     <p>From its medieval origins to the digital era, learn everything there is to know about the ubiquitous lorem ipsum passage.</p>
-                    <a href="">Read More</a>
+                    <Link to="">Read More</Link>
                   </div>
                 </div>
               </td>
@@ -93,7 +101,7 @@ function Home() {
                   <div className="card-body">
                     <h5>Planting a Thousand Trees</h5>
                     <p>From its medieval origins to the digital era, learn everything there is to know about the ubiquitous lorem ipsum passage.</p>
-                    <a href="">Read More</a>
+                    <Link to="">Read More</Link>
                   </div>
                 </div>
               </td>
@@ -148,34 +156,36 @@ function Home() {
         <div className="container">
           <div className="article-home-detail">
             <h3>Lastest Article</h3>
-            <Link to="/artikel" href="">See All</Link>
+            <Link to="/artikel" href="">
+              See All
+            </Link>
           </div>
           <div className="articles-container">
             <div className="card">
               <img src="/Home/articleHome1.png" alt="Article 1" />
               <div className="article-info">
                 <h3>Vaguely in the Spotlight: Environmental Issues that are Always Overlooked</h3>
-                <a href="#" className="read-more">
+                <Link to="#" className="read-more">
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
             <div className="card">
               <img src="/Home/articleHome2.png" alt="Article 1" />
               <div className="article-info">
                 <h3>Dare to Change: Becoming an Urban Citizen Sustainable with Public Transportation</h3>
-                <a href="#" className="read-more">
+                <Link to="#" className="read-more">
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
             <div className="card">
               <img src="/Home/articleHome3.png" alt="Article 1" />
               <div className="article-info">
                 <h3>TAPMI: Migrant Seafarers are Migrant Workers who play an important role</h3>
-                <a href="#" className="read-more">
+                <Link to="#" className="read-more">
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
           </div>

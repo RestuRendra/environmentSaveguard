@@ -104,18 +104,19 @@ input[type="search"]::-webkit-search-cancel-button {
 #carrousel-home .carousel-caption p {
   width: 690px;
   margin-top: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   text-align: start;
 }
 
-#carrousel-home .carousel-caption button {
+#carrousel-home .carousel-caption .button-getstarted {
   margin-top: 0px;
+  padding: 10px 30px;
   background-color: #03624c; /* Sesuaikan warna tombol */
   color: #fff;
   text-decoration: none;
   border-radius: 10px;
   border: none;
-  font-size: 10px;
+  font-size: 20px;
   font-weight: bold;
   width: 170px;
   height: 1.5cm;

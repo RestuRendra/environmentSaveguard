@@ -1,5 +1,6 @@
 import React from "react";
 import "./../index.css";
+import { Link } from "react-router-dom";
 
 function Forgot() {
   return (
@@ -19,9 +20,9 @@ function Forgot() {
               </div>
               <button type="submit">Next</button>
               <p class="back-to-signin">
-                <a href="#">
+                <Link to="/signin">
                   Back to <span>Sign In</span>
-                </a>
+                </Link>
               </p>
             </form>
           </div>

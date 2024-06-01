@@ -53,9 +53,9 @@ function Navbar() {
             </div>
 
             <div className="button">
-              <a href="signin.html" className="btn">
+              <Link to="/signin" className="btn">
                 Log In
-              </a>
+              </Link>
             </div>
           </div>
         </div>

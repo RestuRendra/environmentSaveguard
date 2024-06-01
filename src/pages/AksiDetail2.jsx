@@ -2,7 +2,7 @@ import Navbar from "./../Navbar.jsx";
 import "../index.css";
 import { Link } from "react-router-dom";
 import Footer from "../Footer.jsx";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const AksiDetail2 = () => {
   const [email, setEmail] = useState("");
