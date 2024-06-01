@@ -19,6 +19,8 @@ import Reset from "./pages/Reset.jsx";
 import Signin from "./pages/Signin.jsx";
 import Artikel from "./pages/Artikel.jsx";
 import ArtikelDetail from "./pages/ArtikelDetail.jsx";
+import Signup from "./pages/Signup.jsx";
+import Profil from "./pages/Profil.jsx";
 
 function App() {
   return (
@@ -43,6 +45,8 @@ function App() {
           <Route path="/forgot" element={<Forgot />} />
           <Route path="/reset" element={<Reset />} />
           <Route path="/signin" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/profil" element={<Profil />} />
           <Route path="/footer" element={<Footer />} />
         </Routes>
       </BrowserRouter>

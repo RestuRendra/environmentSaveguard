@@ -584,7 +584,7 @@ input[type="search"]::-webkit-search-cancel-button {
   height: 80vh; /* Optional: Adjust height to center vertically within the viewport */
 }
 
-#artikel-card{
+#artikel-card {
   margin-bottom: 2cm;
 }
 
@@ -593,7 +593,7 @@ input[type="search"]::-webkit-search-cancel-button {
   justify-content: center; /* Centers the table horizontally */
 }
 
-#artikel-card .container{
+#artikel-card .container {
   padding: 0px 35px;
 }
 
@@ -604,7 +604,6 @@ table {
 td {
   padding: 10px; /* Optional: Add some padding around table cells */
 }
-
 
 #artikel-card .card h5 {
   height: 110px;
@@ -664,61 +663,60 @@ td {
   box-sizing: border-box;
 }
 
-.article-content h5{
+.article-content h5 {
   margin-top: 40px;
   margin-bottom: 60px;
 }
 
-.paragraph1 p{
+.paragraph1 p {
   font-size: 22px;
   text-align: justify;
 }
 
 .paragraph1 p::first-letter {
-  font-weight:900;
-  font-size: 6.2em; 
+  font-weight: 900;
+  font-size: 6.2em;
   float: left;
-  margin-right: 0.1em; 
+  margin-right: 0.1em;
   line-height: 1;
-  color: #ACCBC4;
+  color: #accbc4;
 }
 
-.paragraph2 p{
+.paragraph2 p {
   margin-top: 40px;
   font-size: 22px;
   text-align: justify;
 }
 
-.paragraph3{
+.paragraph3 {
   display: flex;
   margin-top: 40px;
 }
 
-.paragraph3 p{
+.paragraph3 p {
   margin-top: 2cm;
   font-size: 22px;
   text-align: justify;
   margin-right: 80px;
 }
 
-.paragraph4 p{
+.paragraph4 p {
   margin-top: 40px;
   font-size: 22px;
   text-align: justify;
 }
 
-.article-content img{
+.article-content img {
   width: 100%;
   height: auto;
   margin-top: 40px;
 }
 
-.paragraph5 p{
+.paragraph5 p {
   margin: 40px 0px;
   font-size: 22px;
   text-align: justify;
 }
-
 
 /* market */
 #market-hero .image-wrapper {
@@ -2723,6 +2721,7 @@ td {
 
 #signin .container {
   margin-top: 1cm;
+  margin-bottom: 1cm;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -2732,7 +2731,7 @@ td {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   background-image: linear-gradient(#009b73, #2fd8a2, #6aebbe, #ebfef6);
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: end;
 }
@@ -2855,6 +2854,470 @@ td {
   100% {
     background-position: 0% 50%;
   }
+}
+
+/* signup */
+#signup {
+  z-index: 1;
+  background: linear-gradient(-45deg, #6aebbe, #03624c, #d0fbe7, #0abf8c);
+  background-size: 400% 400%;
+  width: 100%;
+  height: 100vh;
+  animation: animate 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#signup .gambar img {
+  position: absolute;
+  width: 20%;
+  top: 9cm;
+  left: 11cm;
+}
+
+#signup .container {
+  margin-top: 1cm;
+  margin-bottom: 1cm;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#signup .container-form {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-image: linear-gradient(#009b73, #2fd8a2, #6aebbe, #ebfef6);
+  width: 70%;
+  display: flex;
+  justify-content: end;
+}
+
+#signup .welcome h1 {
+  color: white;
+  margin-left: 50px;
+  padding-top: 100px;
+}
+
+#signup form {
+  background-color: #ffffff;
+  width: 140%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-top: 60px;
+}
+
+#signup .biodata {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+#signup .biodata h1 {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#signup form label {
+  margin-bottom: 5px;
+}
+
+#signup form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+#signup button {
+  width: 60%;
+  border-radius: 13px;
+  font-weight: bold;
+  font-size: 16px;
+  height: 40px;
+  margin: 10px 10px;
+  border-style: none;
+  background-color: #007c5f;
+  color: #ffffff;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#signup button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#signup button:hover {
+  background-color: #ffce39;
+}
+
+#signup .signin {
+  display: flex;
+  padding-bottom: 100px;
+}
+
+#signup .signin p {
+  margin-right: 5px;
+}
+
+#signup .signin a {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* profil nav */
+.profilpage .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 20px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fixes the navbar at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures navbar is above other content */
+}
+
+.profilpage .navbar-left .logo {
+  height: 55px;
+  margin-left: 60px;
+}
+
+.profilpage .navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.profilpage .navbar-right .profile-pic {
+  height: 40px;
+  width: 40px;
+  border-radius: 20%;
+  margin-right: 10px;
+}
+
+.profilpage .navbar-right .welcome-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  color: #717b8c;
+  margin-right: 120px;
+}
+
+.profilpage .navbar-right .welcome-text span {
+  display: block; /* Mengubah span menjadi elemen blok */
+  font-size: 16px; /* Ukuran font untuk username */
+  color: #000000; /* Warna teks untuk username */
+}
+
+/* profil inti */
+#profil {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start to allow margin-top to work */
+  min-height: 100vh; /* Ensure the body takes the full height of the viewport */
+  background-color: #f4f4f4;
+  padding-top: 100px; /* Increase padding top to account for fixed navbar height */
+}
+
+.my-profil {
+  display: flex;
+  width: 70%;
+  max-width: 1200px;
+  margin: auto; /* Center the profile section */
+}
+.profile-image {
+  display: flex;
+  align-items: flex-start; /* Mengatur ikon dan gambar profil ke atas */
+}
+
+.profile-image i {
+  margin-right: 40px;
+  margin-left: -30px;
+}
+
+.profile-details h2 {
+  font-size: 18px;
+}
+
+.profile-details p {
+  font-size: 14px;
+}
+
+.foto-profil {
+  width: 60px; /* Ubah lebar gambar profil */
+  height: 60px; /* Ubah tinggi gambar profil */
+  border-radius: 50%; /* Membuat gambar profil menjadi lingkaran */
+}
+
+.small-container {
+  flex: 1 1 25%; /* Grow, shrink, and base width set to 25% */
+  background-color: #e8efcf;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-right: 20px;
+  min-height: 80px; /* Minimum height if you want it to be adjustable */
+  max-height: 150px; /* Maximum height if you want to restrict growth */
+}
+
+.small-container a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.profile-link {
+  color: #000000;
+}
+
+.profile-link:hover {
+  color: #0056b3;
+}
+
+.logout-link {
+  color: #fc3333;
+}
+
+.logout-link:hover {
+  color: #cc0000;
+}
+
+.profile-link i,
+.logout-link i {
+  margin-right: 10px;
+}
+.large-container {
+  flex: 3 1 70%; /* Grow, shrink, and base width set to 70% */
+  background-color: #e8efcf;
+  padding: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.large-container .profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.large-container .profile-image i {
+  font-size: 12px;
+  color: #03624c;
+  border-radius: 50%; /* membuat lingkaran */
+  box-shadow: 0 0 0 4px #03624c; /* efek outline lingkaran */
+  padding: 5px;
+}
+
+.large-container .profile-image2 i {
+  margin-top: -20px;
+  font-size: 10px;
+  color: #fff;
+  box-shadow: 0 0 0 4px #fff;
+}
+
+.large-container .profile-image2 img {
+  width: 80px; /* Atur lebar gambar */
+  height: 80px; /* Atur tinggi gambar */
+}
+
+.large-container .profile-details2 button {
+  padding: 10px 20px; /* Atur padding tombol */
+  border: none; /* Hapus border tombol */
+  border-radius: 5px; /* Atur border radius tombol */
+  cursor: pointer; /* Atur kursor saat di atas tombol */
+}
+
+.large-container .profile-details2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.large-container .profile-details2 .change-button {
+  font-size: 13px;
+  order: 1;
+  background-color: #007c5f;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.large-container .profile-details2 .change-button:hover {
+  background-color: #ffce39;
+}
+
+.large-container .profile-details2 .delete-button {
+  font-size: 13px;
+  order: 2;
+  background-color: transparent;
+  color: #007c5f;
+  border: 2px solid #007c5f;
+  border-radius: 5px;
+  padding: 8px 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.large-container .profile-details2 .delete-button:hover {
+  background-color: #ffce39;
+  border: none;
+}
+
+.large-container .profile-details {
+  margin-left: 20px;
+}
+
+.large-container .profile-details h2 {
+  margin: 0;
+}
+
+.large-container .profile-details p {
+  margin: 5px 0;
+}
+
+.large-container .edit-button {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.large-container .edit-button button {
+  float: right;
+  padding: 10px 20px;
+  background-color: #007c5f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.large-container .edit-button button i {
+  margin-top: -50px;
+}
+
+.large-container .edit-button button:hover {
+  background-color: #ffce39;
+}
+
+.large-container form {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.large-container label {
+  margin: 10px 0 5px;
+}
+
+.large-container input,
+.large-container textarea {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.large-container input[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.large-container input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.form-container {
+  display: flex;
+}
+
+.left-column {
+  flex: 1;
+  padding-right: 20px; /* Jarak antara kolom */
+}
+
+.right-column {
+  flex: 1;
+}
+
+.form-row {
+  margin-bottom: 10px; /* Jarak antar baris */
+  display: flex;
+  align-items: center;
+}
+
+.form-row label {
+  width: 70px;
+  margin-right: 10px;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+.button2 {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.save-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #bdbdbd;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-button {
+  background-color: #007c5f;
+  color: #fff;
+}
+
+.cancel-button:hover {
+  background-color: #ffce39;
+}
+
+.save-button:hover {
+  background-color: #ffce39;
 }
 
 /* footer */

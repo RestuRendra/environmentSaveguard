@@ -1,5 +1,6 @@
 import React from "react";
 import "./../index.css";
+import { Link } from "react-router-dom";
 
 function Signin() {
   return (
@@ -20,7 +21,7 @@ function Signin() {
               </div>
 
               <button>
-                <a href="home.html">Login</a>
+                <Link to="home.html">Login</Link>
               </button>
 
               <div class="remfp">
@@ -29,12 +30,12 @@ function Signin() {
                   <label for="hobi1">Remimber Me</label>
                   <br />
                 </div>
-                <a href="forgot-password.html">Forgot Password?</a>
+                <Link to="forgot-password.html">Forgot Password?</Link>
               </div>
 
               <div class="signup">
                 <p>Don't have an account?</p>
-                <a href="signup.html">Sign up</a>
+                <Link to="/signup">Sign up</Link>
               </div>
             </form>
             <div class="welcome">
