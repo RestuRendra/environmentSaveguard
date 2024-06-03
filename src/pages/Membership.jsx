@@ -94,19 +94,19 @@ const Membership = () => {
                       </select>
                     </div>
                   </form>
-                  <a href="#" className="btn" onClick={handlePopup}>
+                  <button className="btn" onClick={handlePopup}>
                     Donasi Sekarang
-                  </a>
+                  </button>
                   {showPopup && (
                     <div className="overlay" id="popupOverlay">
                       <div className="popup">
                         <div className="icon-container">
-                          <img src="img/Done.png" alt="Done Icon" className="icon" />
-                          <p className="message">Silahkan Periksa Email Anda!</p>
-                          <p className="message">Untuk Melakukan Pembayaran</p>
-                          <a href="donasi-bulanan.html" className="back">
-                            Back
-                          </a>
+                          <img src="Pop.png" alt="pop up" className="icon" />
+                          <p className="message">Maaf Anda Harus</p>
+                          <p className="message">Login Terlebih Dahulu!</p>
+                          <button className="close-button" onClick={() => setShowPopup(false)}>
+                            &times;
+                          </button>
                         </div>
                       </div>
                     </div>

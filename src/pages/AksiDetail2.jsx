@@ -9,11 +9,16 @@ const AksiDetail2 = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phone, setPhone] = useState("");
+  const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     const loadingBar = document.querySelector(".loading-bar");
     loadingBar.style.width = "70%";
   }, []);
+
+  const handlePopup = () => {
+    setShowPopup(true);
+  };
 
   return (
     <>
@@ -75,9 +80,23 @@ const AksiDetail2 = () => {
                     Environment Safeguard memerlukan informasi kontak yang Anda berikan kepada kami untuk menghubungi Anda tentang produk dan layanan kami. Anda dapat berhenti berlangganan dari komunikasi ini kapan pun. Untuk informasi
                     tentang cara berhenti berlangganan, serta praktik privasi dan komitmen kami untuk melindungi privasi Anda, tinjau Kebijakan Privasi kami.
                   </h6>
-                  <Link to="/aksidone" className="btn">
+                  <button className="btn" onClick={handlePopup}>
                     Action List
-                  </Link>
+                  </button>
+                  {showPopup && (
+                    <div className="overlay" id="popupOverlay">
+                      <div className="popup">
+                        <div className="icon-container">
+                          <img src="Pop.png" alt="pop up" className="icon" />
+                          <p className="message">Maaf Anda Harus</p>
+                          <p className="message">Login Terlebih Dahulu!</p>
+                          <button className="close-button" onClick={() => setShowPopup(false)}>
+                            &times;
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

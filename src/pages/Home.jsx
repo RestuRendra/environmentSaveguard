@@ -32,7 +32,7 @@ function Home() {
               <img src="/Home/HeroHome2.png" className="d-block w-100 c-img" alt="Slide 2" />
               <div className="carousel-caption top-0 mt-4">
                 <h1>PLANTING A THOUSAND TRESS </h1>
-                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                <p>Join Us in Being Part of a Movement planting a thousand trees becomes part of a larger movement. Let's Build a Better Future Together!</p>
                 <Link to="/" className="button-getstarted">
                   Get Started
                 </Link>
@@ -42,7 +42,7 @@ function Home() {
               <img src="/Home/HeroHome3.png" className="d-block w-100 c-img" alt="Slide 3" />
               <div className="carousel-caption top-0 mt-4">
                 <h1>PLANTING A THOUSAND TRESS </h1>
-                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                <p>A Green Future in Our Hands Together Towards Sustainable Planting a Thousand Trees for Life</p>
                 <Link to="/" className="button-getstarted">
                   Get Started
                 </Link>

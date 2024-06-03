@@ -120,6 +120,8 @@ input[type="search"]::-webkit-search-cancel-button {
   font-weight: bold;
   width: 170px;
   height: 1.5cm;
+  position: absolute; /* Mengatur posisi tombol sebagai absolut */
+  bottom: 60px; /* Meletakkan tombol di bagian bawah kartu */
 }
 
 /* Home About */
@@ -1229,6 +1231,65 @@ td {
   background-color: #ffce39;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  position: relative;
+  background-color: #ecfadc;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.popup img {
+  width: 150px;
+  height: 150px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.icon-container p {
+  font-size: 20px;
+  color: #03624c;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #03624c;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: red;
+}
+
 /* donasi bulanan */
 #bulanan {
   background-color: #a2cbb3;
@@ -1385,93 +1446,63 @@ td {
   background-color: #ffce39;
 }
 
-#bulanan .overlay {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: none; /* Hidden by default */
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
 }
 
-#bulanan .popup {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(3, 98, 76, 0.8); /* Bayangan dengan warna #03624c dan transparansi 80% */
+.popup {
+  position: relative;
+  background-color: #ecfadc;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 50%; /* Setengah layar */
-  height: 50%; /* Setengah layar */
+}
+
+.popup img {
+  width: 150px;
+  height: 150px;
+}
+
+.icon-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  z-index: 1001; /* Ensure popup is above the overlay */
+  align-items: center;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
-#bulanan .popup img {
-  width: 120px;
-  height: 120px;
+.icon {
+  width: 50px;
+  height: 50px;
 }
 
-#bulanan .popup h1 {
-  margin: 0;
-  font-size: 24px;
+.icon-container p {
+  font-size: 20px;
   color: #03624c;
 }
 
-#bulanan .popup button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #03624c;
-  border: none;
-  border-radius: 5px;
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #03624c;
   cursor: pointer;
 }
 
-@keyframes grow-shrink {
-  0% {
-    transform: scale(1); /* Ukuran normal pada awal animasi */
-  }
-  50% {
-    transform: scale(1.5); /* Membesar hingga 1.5 kali ukuran asli */
-  }
-  100% {
-    transform: scale(1); /* Kembali ke ukuran normal */
-  }
-}
-
-#bulanan .message {
-  font-size: 25px; /* Ukuran font pesan */
-  font-weight: 600; /* Ketebalan font */
-  color: #000000; /* Warna teks */
-  margin-top: -5px; /* Jarak atas teks dari ikon */
-  animation: grow-shrink 2s ease-in-out infinite; /* Animasi */
-}
-
-/* Animasi grow dan shrink */
-@keyframes grow-shrink {
-  0%,
-  100% {
-    transform: scale(1);
-  } /* Awal dan akhir: normal */
-  50% {
-    transform: scale(1.1);
-  } /* Tengah: diperbesar */
-}
-
-#bulanan .back {
-  text-decoration: none;
-  color: #007bff;
-}
-
-#bulanan .back:hover {
-  color: #ef0707;
+.close-button:hover {
+  color: red;
 }
 
 /* satu kali */
@@ -1634,93 +1665,63 @@ td {
   background-color: #ffce39;
 }
 
-#satukali .overlay {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: none; /* Hidden by default */
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
 }
 
-#satukali .popup {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(3, 98, 76, 0.8); /* Bayangan dengan warna #03624c dan transparansi 80% */
+.popup {
+  position: relative;
+  background-color: #ecfadc;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 50%; /* Setengah layar */
-  height: 50%; /* Setengah layar */
+}
+
+.popup img {
+  width: 150px;
+  height: 150px;
+}
+
+.icon-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  z-index: 1001; /* Ensure popup is above the overlay */
+  align-items: center;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
-#satukali .popup img {
-  width: 120px;
-  height: 120px;
+.icon {
+  width: 50px;
+  height: 50px;
 }
 
-#satukali .popup h1 {
-  margin: 0;
-  font-size: 24px;
+.icon-container p {
+  font-size: 20px;
   color: #03624c;
 }
 
-#satukali .popup button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #03624c;
-  border: none;
-  border-radius: 5px;
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #03624c;
   cursor: pointer;
 }
 
-@keyframes grow-shrink {
-  0% {
-    transform: scale(1); /* Ukuran normal pada awal animasi */
-  }
-  50% {
-    transform: scale(1.5); /* Membesar hingga 1.5 kali ukuran asli */
-  }
-  100% {
-    transform: scale(1); /* Kembali ke ukuran normal */
-  }
-}
-
-#satukali .message {
-  font-size: 25px; /* Ukuran font pesan */
-  font-weight: 600; /* Ketebalan font */
-  color: #000000; /* Warna teks */
-  margin-top: -5px; /* Jarak atas teks dari ikon */
-  animation: grow-shrink 2s ease-in-out infinite; /* Animasi */
-}
-
-/* Animasi grow dan shrink */
-@keyframes grow-shrink {
-  0%,
-  100% {
-    transform: scale(1);
-  } /* Awal dan akhir: normal */
-  50% {
-    transform: scale(1.1);
-  } /* Tengah: diperbesar */
-}
-
-#satukali .back {
-  text-decoration: none;
-  color: #007bff;
-}
-
-#satukali .back:hover {
-  color: #ef0707;
+.close-button:hover {
+  color: red;
 }
 
 /* metode pembayaran */
