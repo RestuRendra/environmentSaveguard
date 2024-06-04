@@ -1,7 +1,6 @@
 import Navbar from "./../Navbar.jsx";
 import "./../index.css";
 import Footer from "../Footer";
-import { Link } from "react-router-dom";
 
 function Komunitas() {
   return (

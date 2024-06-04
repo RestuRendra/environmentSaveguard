@@ -27,7 +27,7 @@ function Signin() {
               <div class="remfp">
                 <div class="checkbox">
                   <input type="checkbox" id="hobi1" name="hobi" value="membaca" />
-                  <label for="hobi1">Remimber Me</label>
+                  <label for="hobi1">Remember Me</label>
                   <br />
                 </div>
                 <Link to="/forgot">Forgot Password?</Link>

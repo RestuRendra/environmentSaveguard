@@ -44,7 +44,7 @@ const AksiDetail2 = () => {
                     <div className="loading-bar"></div>
                   </div>
                   <p>8283 masih dibutuhkan untuk menuju 20,000</p>
-                  <form className="form-container">
+                  <form className="form-container aksi2">
                     <div className="form-group">
                       <label htmlFor="email">Email</label>
                       <div className="input-wrapper">

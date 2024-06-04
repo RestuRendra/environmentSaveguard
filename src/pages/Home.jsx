@@ -23,9 +23,9 @@ function Home() {
               <div className="carousel-caption top-0 mt-4">
                 <h1>YOUNG PEOPLE'S VOICES FOR A SUSTAINABLE FUTURE</h1>
                 <p>Join Us in Being Part of a Global Movement to Inspire, Mobilize, and Deliver the Change Our Planet and Our Children Need. Let's Build a Better Future Together!"</p>
-                <Link to="/" className="button-getstarted">
+                <a href="/#about-home" className="button-getstarted">
                   Get Started
-                </Link>
+                </a>
               </div>
             </div>
             <div className="carousel-item c-item">
@@ -33,9 +33,9 @@ function Home() {
               <div className="carousel-caption top-0 mt-4">
                 <h1>PLANTING A THOUSAND TRESS </h1>
                 <p>Join Us in Being Part of a Movement planting a thousand trees becomes part of a larger movement. Let's Build a Better Future Together!</p>
-                <Link to="/" className="button-getstarted">
+                <a href="/#about-home" className="button-getstarted">
                   Get Started
-                </Link>
+                </a>
               </div>
             </div>
             <div className="carousel-item c-item">
@@ -43,9 +43,9 @@ function Home() {
               <div className="carousel-caption top-0 mt-4">
                 <h1>PLANTING A THOUSAND TRESS </h1>
                 <p>A Green Future in Our Hands Together Towards Sustainable Planting a Thousand Trees for Life</p>
-                <Link to="/" className="button-getstarted">
+                <a href="/#about-home" className="button-getstarted">
                   Get Started
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -69,7 +69,9 @@ function Home() {
               Exploitation of environment rin the world make us being sad to see it. We try to make movement with a lot of conservation program that we initiate. Our program was made for better environment around us. We Try to reach a lot
               of environment to change it become better place to live. Let’s join our program to give contribution to your environment.
             </p>
-            <button className="btn px-4 py-2 fs-5 mt-5 btn-about">Learn More</button>
+            <Link to="/listaksi" className="btn-about">
+              Learn More
+            </Link>
           </div>
           <div className="container-image">
             <tr>

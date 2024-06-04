@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 function Footer() {
@@ -9,51 +10,51 @@ function Footer() {
             <div className="footer-col">
               <img src="logo.png" className="footer" />
               <div className="social-links">
-                <a href="#">
+                <Link to="#">
                   <i className="fa-brands fa-facebook"></i>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                   <i className="fa-brands fa-instagram"></i>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="#">
                   <i className="fa-brands fa-youtube"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="footer-col">
               <div className="social-links">
                 <li>
-                  <a href="home.html">HOME</a>
+                  <Link to="/">HOME</Link>
                 </li>
                 <li>
-                  <a href="about.html">ABOUT</a>
+                  <Link to="/about">ABOUT</Link>
                 </li>
                 <li>
-                  <a href="artikel.html">ARTICLE</a>
+                  <Link to="/artikel">ARTICLE</Link>
                 </li>
                 <li>
-                  <a href="donasi.html">DONATION</a>
+                  <Link to="/donasi">DONATION</Link>
                 </li>
                 <li>
-                  <a href="market.html">MARKETPLACE</a>
+                  <Link to="/market">MARKETPLACE</Link>
                 </li>
               </div>
             </div>
             <div className="footer-col">
               <div className="social-links">
                 <li>
-                  <a href="#">CONTACT US</a>
+                  <Link to="#">CONTACT US</Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fa-brands fa-whatsapp"></i>
-                  </a>
+                  </Link>
                   <span>08123456789</span>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fa-regular fa-envelope"></i>
-                  </a>
+                  </Link>
                   <span>greenguardians@gmail.com</span>
                 </li>
               </div>

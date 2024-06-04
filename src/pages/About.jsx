@@ -14,7 +14,7 @@ function About() {
               Thank you for your concern and support for our mission to protect and preserve the environment. With your donation, you have become part of a global movement to safeguard biodiversity and pass on a greener planet to future
               generations.
             </h5>
-            <a href="" className="teksbtn">
+            <a href="#about-visi-misi" className="teksbtn">
               More Information
             </a>
           </div>
